@@ -139,3 +139,5 @@ export const Skills = ({
     </Fragment>
   );
 };
+
+export default Skills;

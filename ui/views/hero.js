@@ -36,3 +36,5 @@ export const Hero = ({ mouse }) => {
     </div>
   );
 };
+
+export default Hero;
