@@ -1,6 +1,6 @@
-export const Resume = () => {
+const Resume = () => {
   return (
-    <div className="section resume">
+    <div className="section resume section_" id="resume">
       <div className="content">
         <div className="cols">
           <div className="col col-md">

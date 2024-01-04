@@ -26,7 +26,7 @@ const galleryImages = {
   ],
 };
 
-export const Portfolio = () => {
+const Portfolio = () => {
   // Isotope
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState("*");
@@ -75,7 +75,7 @@ export const Portfolio = () => {
         toggler={gallery}
         sources={galleryImages[activeGallaryImage]}
       />
-      <div className="section works section_" id="section-works">
+      <div className="section works section_" id="works">
         <div className="content">
           <div className="title">
             <div className="title_inner">Recent Works</div>

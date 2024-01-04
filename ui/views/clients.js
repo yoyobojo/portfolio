@@ -2,7 +2,7 @@
 import Isotope from "isotope-layout";
 import { useEffect, useRef, useState } from "react";
 
-export const Clients = () => {
+const Clients = () => {
   // Isotope
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState("*");

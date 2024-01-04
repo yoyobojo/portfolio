@@ -1,6 +1,6 @@
-export const Services = () => {
+const Services = () => {
   return (
-    <div className="section service">
+    <div className="section service section_" id="services">
       <div className="content">
         <div className="title">
           <div className="title_inner">My Services</div>

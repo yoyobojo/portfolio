@@ -1,7 +1,7 @@
 "use client";
 import {TypedStrings} from "@/ui/components/typed";
 
-export const Hero = ({ mouse }) => {
+const Hero = ({ mouse }) => {
   return (
     <div className="section started" style={{ height: "96vh" }}>
       <div className="centrize full-width">

@@ -1,36 +1,9 @@
-export const Contact = () => {
+const Contact = () => {
   return (
-    <div className="section contacts section_" id="section-contacts">
+    <div className="section contacts section_" id="contact">
       <div className="content">
         <div className="title">
-          <div className="title_inner">Contacts</div>
-        </div>
-        <div className="service-items">
-          <div className="service-item">
-            <div className="icon">
-              <span className="ion ion-android-phone-portrait" />
-            </div>
-            <div className="name">Phone</div>
-            <p>+ (231) 456 67 89</p>
-          </div>
-          <div className="service-item">
-            <div className="icon">
-              <span className="ion ion-email" />
-            </div>
-            <div className="name">Email</div>
-            <p>
-              <a href="mailto:steve-pearson@gmail.com">
-                steve-pearson@gmail.com
-              </a>
-            </p>
-          </div>
-          <div className="service-item">
-            <div className="icon">
-              <span className="ion ion-ios-location" />
-            </div>
-            <div className="name">Address</div>
-            <p>2621 W Pico Blvd, Los Angeles</p>
-          </div>
+          <div className="title_inner">Contact</div>
         </div>
         <div className="contact_form">
           <form id="cform" method="post">

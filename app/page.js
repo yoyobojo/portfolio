@@ -1,14 +1,12 @@
-import { Base } from "@/ui/layouts/base"
-import { About, Hero, Resume, Services, Skills, Contact } from "@/ui/views";
+import { Base } from "@/ui/layouts/base";
+import Hero from "@/ui/views/hero";
+import About from "@/ui/views/about";
+import Resume from "@/ui/views/resume";
+import Services from "@/ui/views/services";
+import Contact from "@/ui/views/contact";
 
 import dynamic from "next/dynamic";
-const Clients = dynamic(() => import("@/ui/views/clients"), {
-  ssr: false,
-});
 const Portfolio = dynamic(() => import("@/ui/views/portfolio"), {
-  ssr: false,
-});
-const Blog = dynamic(() => import("@/ui/views/blog"), {
   ssr: false,
 });
 
@@ -18,11 +16,8 @@ const Page = () => {
       <Hero mouse={true} />
       <About />
       <Resume />
-      <Skills />
       <Services />
-      <Clients />
       <Portfolio />
-      <Blog />
       <Contact />
     </Base>
   );

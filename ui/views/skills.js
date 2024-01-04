@@ -126,15 +126,15 @@ export const Knowledge = () => {
 };
 
 import { Fragment } from "react";
-export const Skills = ({
+const Skills = ({
   design = true,
   coding = true,
   knowledge = true,
 }) => {
   return (
     <Fragment>
+            {coding && <CodingSkills />}
       {design && <DesignSkills />}
-      {coding && <CodingSkills />}
       {knowledge && <Knowledge />}
     </Fragment>
   );

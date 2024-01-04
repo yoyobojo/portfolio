@@ -44,22 +44,22 @@ export const Header = () => {
         <div className="top-menu">
           <ul>
             <li className="">
-              <a href="#section-resume" className="lnk">
+              <a href="#resume" className="lnk">
                 Resume
               </a>
             </li>
             <li className="">
-              <a href="#section-works" className="lnk">
-                Portfolio
+              <a href="#services" className="lnk">
+                Services
               </a>
             </li>
             <li className="">
-              <a href="#section-blog" className="lnk">
-                Blog
+              <a href="#works" className="lnk">
+                Works
               </a>
             </li>
             <li>
-              <a href="#section-contacts" className="btn">
+              <a href="#contact" className="btn">
                 Contact
               </a>
             </li>

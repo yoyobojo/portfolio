@@ -484,7 +484,7 @@ header .head-top .top-menu ul li:hover > .children {
 }
 
 .section.about .image img {
-  width: 100px;
+  width: 120px;
   /* height: 100px; */
   /* border-radius: 100px;
   -moz-border-radius: 100px;
@@ -520,7 +520,7 @@ header .head-top .top-menu ul li:hover > .children {
 }
 
 .section.about .desc {
-  margin-left: 130px;
+  margin-left: 150px;
 }
 
 @media (max-width: 600px) {

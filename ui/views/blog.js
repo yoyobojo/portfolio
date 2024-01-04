@@ -2,7 +2,8 @@
 import Isotope from "isotope-layout";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-export const Blog = ({ dark }) => {
+
+const Blog = ({ dark }) => {
   // Isotope
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState("*");
@@ -90,7 +91,7 @@ export const Blog = ({ dark }) => {
   ];
 
   return (
-    <div className="section blog section_" id="section-blog">
+    <div className="section blog section_" id="blog">
       <div className="content">
         <div className="title">
           <div className="title_inner">Latest Posts</div>

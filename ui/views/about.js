@@ -1,9 +1,9 @@
 import { LINKS } from "@/utils/constants";
 import { calcTimeDifference } from "@/utils/helpers"
 
-export const About = () => {
+const About = () => {
   return (
-    <div className="section about section_" id="section-resume">
+    <div className="section about section_" id="about">
       <div className="content">
         <div className="title">
           <div className="title_inner">About Me</div>

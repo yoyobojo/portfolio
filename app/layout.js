@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={robotoMono.variable}>
         <Preloader />
-        <State>{children} </State>
+        <State>{children}</State>
       </body>
     </html>
   );
