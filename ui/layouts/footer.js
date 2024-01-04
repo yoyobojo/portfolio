@@ -10,12 +10,10 @@ export const Footer = () => {
         <a target="_blank" href={LINKS.github}>
           <span className="ion ion-social-github" />
         </a>
-        <a target="_blank" href={LINKS.twitter}>
-          <span className="ion ion-social-twitter" />
+        <a target="_blank" href={LINKS.calendly}>
+          <span className="ion ion-calendar" />
         </a>
-        <a target="_blank" href={LINKS.instagram}>
-          <span className="ion ion-social-instagram" />
-        </a>
+
       </div>
       <div className="copy">
         © {new Date().getFullYear()} Suave Tech Solutions. All rights reserved.
