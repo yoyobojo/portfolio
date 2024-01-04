@@ -434,3 +434,5 @@ export const Portfolio = () => {
     </Fragment>
   );
 };
+
+export default Portfolio;

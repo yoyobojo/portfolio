@@ -127,3 +127,5 @@ export const Blog = ({ dark }) => {
     </div>
   );
 };
+
+export default Blog;
