@@ -1,0 +1,26 @@
+{
+  "name": "angello-lazar-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Angello Lazar",
+    "email": "contact@suavetech.solutions",
+    "url": "https://suavetech.solutions"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "fslightbox-react": "^1.7.6",
+    "isotope-layout": "^3.0.6",
+    "next": "14.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-player": "^2.13.0",
+    "typed.js": "^2.0.16"
+  }
+}
