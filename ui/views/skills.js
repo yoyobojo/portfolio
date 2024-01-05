@@ -89,7 +89,7 @@ export const CodingSkills = () => {
 export const Knowledge = () => {
   return (
     <div className="section skills">
-      <div className="content pt-4">
+      <div className="content">
         <div className="title">
           <div className="title_inner">Knowledgable Languages</div>
         </div>
