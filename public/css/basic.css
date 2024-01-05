@@ -227,7 +227,7 @@ h6 {
 
 p {
   font-size: 13px;
-  line-height: 23px;
+  line-height: 22px;
   padding: 0;
   margin: 20px 0;
 }
@@ -474,6 +474,7 @@ li {
 
 .dotted-list li {
   margin-bottom: 4px;
+  line-height: 22px;
 }
 
 .dotted-list:last-child {
