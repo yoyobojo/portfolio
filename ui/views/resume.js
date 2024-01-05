@@ -65,18 +65,33 @@ const Resume = () => {
             </div>
             <div className="resume-items">
               <div className="resume-item">
-                <div className="date">March 2018 - March 2021</div>
-                <div className="name">NYU Blockchain Club</div>
+                <div className="date">Sept. 2018 - March 2021</div>
+                <div className="name">Founder | NYU Blockchain Club</div>
                 <p>
-                  Co-founded the club to shed light on the possibilities blockchain technology brings to the digital realm and financial sector.
+                  Co-founded the club to shed light on the possibilities blockchain 
+                  technology brings to the digital realm and financial sector
+                </p>
+              </div>
+              <div className="resume-item">
+                <div className="date">Jan. 2018 - March 2021</div>
+                <div className="name">Member | Quantitative Finance Society</div>
+                <p>
+                  Discussed and meeting about finance-related topics and issues, 
+                  as well as cryptocurrencies, twice a week
                 </p>
               </div>
               <div className="resume-item">
                 <div className="date">Aug. 2017 - May 2019</div>
-                <div className="name">NYU Men’s Varsity Soccer</div>
+                <div className="name">Goalkeeper | NYU Men’s Varsity Soccer</div>
                 <ul className="dotted-list">
-                  <li>Competed in the NCAA Division III and NCAA National Tournament, achieving UAA All-Academic</li>
-                  <li>Dedicated over 35 hours a week to practice, lifting, team meetings, traveling, and competitions nation-wide</li>
+                  <li>
+                    Competed in the NCAA Division III and NCAA 
+                    National Tournament, achieving UAA All-Academic
+                  </li>
+                  <li>
+                    Dedicated over 35 hours a week to practice, lifting, 
+                    team meetings, traveling, and competitions nation-wide
+                  </li>
                 </ul>
               </div>
             </div>
