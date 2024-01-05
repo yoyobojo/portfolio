@@ -45,9 +45,6 @@ const About = () => {
               <li>
                 <strong>Residence: </strong> Atlanta / NYC
               </li>
-              <li>
-                <strong>E-mail:</strong> angellolazar@gmail.com
-              </li>
             </ul>
           </div>
           <div className="bts">

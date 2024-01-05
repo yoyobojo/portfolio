@@ -5,17 +5,17 @@ const Resume = () => {
         <div className="cols">
           <div className="col col-md">
             <div className="title">
-              <div className="title_inner">Experience</div>
+              <div className="title_inner mb-1">Experience</div>
             </div>
             <div className="resume-items">
               <div className="resume-item active">
-                <div className="date">2013 - Present</div>
-                <div className="name">Art Director - Facebook Inc</div>
-                <p>
-                  Morbi nulla arcu, pellentesque sed egestas in, tempor eget
-                  felis. Nullam tincidunt augue in leo feugiat, quis interdum
-                  nisi sollicitudin.
-                </p>
+                <div className="date">Aug. 2022 - Present</div>
+                <div className="name">Founder & Software Engineer | Suave Tech Solutions</div>
+                <ul className="dotted-list">
+                  <li>Managing a team of 4 developers while leading all sales and design pitches</li>
+                  <li>Built unique websites and CRUD apps with technologies including Django, Flask, VueJS, AngularJS on AWS web services</li>
+                  <li>Designed 20+ interactive wireframes and mockups using Sketch and InVision of which 10+ were used</li>
+                </ul>
               </div>
               <div className="resume-item">
                 <div className="date">2011 - 2012</div>
@@ -39,7 +39,7 @@ const Resume = () => {
           </div>
           <div className="col col-md">
             <div className="title">
-              <div className="title_inner">Education</div>
+              <div className="title_inner mb-1">Education</div>
             </div>
             <div className="resume-items">
               <div className="resume-item">

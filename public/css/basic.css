@@ -229,7 +229,7 @@ p {
   font-size: 13px;
   line-height: 23px;
   padding: 0;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 strong {
@@ -465,6 +465,21 @@ li {
   margin-bottom: 0px;
 }
 
+.dotted-list {
+  list-style: square;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 16px;
+}
+
+.dotted-list li {
+  margin-bottom: 4px;
+}
+
+.dotted-list:last-child {
+  margin-bottom: 0px;
+}
+
 /* 10. Code */
 code {
   background: #dddddd;
@@ -477,7 +492,7 @@ code {
 /* 11. Tables */
 table {
   width: 100%;
-  margin: 30px 0;
+  margin: 20px 0;
   padding: 0;
   border-collapse: collapse;
 }
@@ -787,11 +802,37 @@ blockquote {
 .pb-2 {
   padding-bottom: 1rem;
 }
+.pt-4 {
+  padding-top: 2rem;
+}
+.pb-4 {
+  padding-bottom: 2rem;
+}
 
 /* Margin */
+.mt-1 {
+  margin-top: 0.5rem;
+}
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
 .mt-2 {
   margin-top: 1rem;
 }
 .mb-2 {
   margin-bottom: 1rem;
+}
+.mt-4 {
+  margin-top: 2rem;
+}
+.mb-4 {
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .mt-1 {
+    margin-top: 0.75rem;
+  }
+  .mb-1 {
+    margin-bottom: 0.75rem;
+  }
 }
