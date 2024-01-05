@@ -17,7 +17,7 @@ const Page = () => {
       <Hero mouse={true} />
       <About />
       <Resume />
-      <Skills knowledge={false} design={false} />
+      <Skills coding={false} design={false} />
       <Services />
       <Portfolio />
       <Contact />

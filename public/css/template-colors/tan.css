@@ -1,60 +1,60 @@
 .container .line {
-	background: #beb7a4;
+	background: #beb7a4 !important;
 }
 
 a:hover {
-	color: #2274a5;
+	color: #2274a5 !important;
 }
 
 header .head-top .top-menu ul li.active > a {
-  color: #2274a5;
+  color: #2274a5 !important;
 }
 
 a.btn.fill,
 .btn.fill {
-	background: #beb7a4;
-	border-color: #beb7a4;
+	background: #beb7a4 !important;
+	border-color: #beb7a4 !important;
 }
 
 a.btn:hover,
 .btn:hover {
-	background: #b4c5e4;
-	border-color: #b4c5e4;
+	background: #b4c5e4 !important;
+	border-color: #b4c5e4 !important;
 }
 
 .preloader .load {
-	color: #beb7a4;
+	color: #beb7a4 !important;
 }
 
 .preloader .typed-load,
 .preloader .typed-cursor {
-	color: #000;
+	color: #000 !important;
 }
 
 input:focus,
 textarea:focus,
 button:focus {
-	border-bottom-color: #beb7a4;
+	border-bottom-color: #beb7a4 !important;
 }
 
 button:hover {
-	border-bottom-color: #beb7a4;
+	border-bottom-color: #beb7a4 !important;
 }
 
 @media (min-width: 580px) {
 	.glitch-effect-white:before,
 	.glitch-effect-white:after {
-		background: #beb7a4;
+		background: #beb7a4 !important;
 	}
 
 	.glitch-effect:after,
 	.glitch-effect-white:after {
-		text-shadow: -1px 0 #beb7a4;
+		text-shadow: -1px 0 #beb7a4 !important;
 	}
 
 	.glitch-effect:before,
 	.glitch-effect-white:before {
-		text-shadow: 2px 0 #beb7a4;
+		text-shadow: 2px 0 #beb7a4 !important;
 	}
 
 }
@@ -62,83 +62,83 @@ button:hover {
 header .head-top .menu-btn:hover:before,
 header .head-top .menu-btn:hover:after,
 header .head-top .menu-btn:hover span {
-  background: #beb7a4;
+  background: #beb7a4 !important;
 }
 
 header .head-top .top-menu ul li.activ > a {
-  color: #beb7a4;
+  color: #beb7a4 !important;
 }
 
 header .head-top .top-menu ul li.active > .btn {
-  background: #fff;
-  color: #000;
-  border-color: #b4c5e4;
+  background: #fff !important;
+  color: #000 !important;
+  border-color: #b4c5e4 !important;
 }
 
 .section.started .mouse_btn {
-  color: #b4c5e4;
+  color: #b4c5e4 !important;
 }
 
 .info-list ul li strong {
-  color: #beb7a4;
+  color: #beb7a4 !important;
 }
 
 .resume-items .resume-item:before {
-  background: #beb7a4;
+  background: #beb7a4 !important;
 }
 
 .resume-items .resume-item .date {
-  color: #beb7a4;
-  border-color: #beb7a4;
+  color: #beb7a4 !important;
+  border-color: #beb7a4 !important;
 }
 
 .resume-items .resume-item .date:before {
-  background: #beb7a4;
+  background: #beb7a4 !important;
 }
 
 .skills ul li .progress .percentage {
-  background: #beb7a4;
+  background: #beb7a4 !important;
 }
 
 .service-items .service-item .icon {
-  color: #beb7a4;
+  color: #beb7a4 !important;
 }
 
 .section.works .filters label.glitch-effect {
-  color: #beb7a4;
+  color: #beb7a4 !important;
 }
 
 .box-items .box-item:hover .desc .name {
-  color: #beb7a4;
+  color: #beb7a4 !important;
 }
 
 .box-items .box-item .image .info .centrize {
-  background: #beb7a4;
+  background: #beb7a4 !important;
 }
 
 .date {
-  color: #beb7a4;
-  border-color: #beb7a4;
+  color: #beb7a4 !important;
+  border-color: #beb7a4 !important;
 }
 
 footer .soc a:hover .ion {
-  color: #2274a5;
+  color: #2274a5 !important;
 }
 
 .skills.dotted ul li .progress .da span {
-  background: #beb7a4!important;
+  background: #beb7a4!important !important;
 }
 
 .skills.list ul li .name:before {
-  color: #beb7a4;
+  color: #beb7a4 !important;
 }
 
 .skills ul li .progress .percentage {
-  background: #beb7a4;
+  background: #beb7a4 !important;
 }
 
 .skills.dotted ul li .progress .da span {
-  background: #beb7a4;
+  background: #beb7a4 !important;
 }
 
 .skills.circles .progress .bar, 
@@ -192,5 +192,5 @@ footer .soc a:hover .ion {
 .skills.circles .progress.p98 .fill, 
 .skills.circles .progress.p99 .fill, 
 .skills.circles .progress.p100 .fill {
-  border-color: #beb7a4;
+  border-color: #beb7a4 !important;
 }

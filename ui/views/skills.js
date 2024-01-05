@@ -49,13 +49,13 @@ export const DesignSkills = () => {
 export const CodingSkills = () => {
   const skills = [
     { id: 1, title: "JS / TS", value: 100 },
-    { id: 2, title: "SQL", value: 95 },
+    { id: 2, title: "SQL", value: 90 },
     { id: 3, title: "Python", value: 75 },
     { id: 4, title: "Solidity", value: 70 },
     { id: 5, title: "Rust", value: 40 },
   ];
   return (
-    <div className="section skills section_" id="skills">
+    <div className="section skills">
       <div className="content">
         <div className="title">
           <div className="title_inner">Coding Skills</div>
@@ -89,35 +89,35 @@ export const CodingSkills = () => {
 export const Knowledge = () => {
   return (
     <div className="section skills">
-      <div className="content">
+      <div className="content pt-4">
         <div className="title">
-          <div className="title_inner">Knowledge</div>
+          <div className="title_inner">Knowledgable Languages</div>
         </div>
         <div className="skills list">
           <ul>
             <li>
-              <div className="name">Website hosting</div>
+              <div className="name">Javascript / Typescript</div>
             </li>
             <li>
-              <div className="name">iOS and android apps</div>
+              <div className="name">NodeJS / Express</div>
             </li>
             <li>
-              <div className="name">Create logo design</div>
+              <div className="name">SQL / NoSQL</div>
             </li>
             <li>
-              <div className="name">Design for print</div>
+              <div className="name">Python / Django</div>
             </li>
             <li>
-              <div className="name">Modern and mobile-ready</div>
+              <div className="name">Solidity</div>
             </li>
             <li>
-              <div className="name">Advertising services include</div>
+              <div className="name">Linux Systems</div>
             </li>
             <li>
-              <div className="name">Graphics and animations</div>
+              <div className="name">HTML / CSS</div>
             </li>
             <li>
-              <div className="name">Search engine marketing</div>
+              <div className="name">Rust</div>
             </li>
           </ul>
         </div>
@@ -134,9 +134,11 @@ const Skills = ({
 }) => {
   return (
     <Fragment>
+      <div className="skills section_ pt-4" id="skills">
       {coding && <CodingSkills />}
       {design && <DesignSkills />}
       {knowledge && <Knowledge />}
+      </div>
     </Fragment>
   );
 };

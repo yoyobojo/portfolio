@@ -337,7 +337,7 @@ header .head-top .top-menu ul li:hover > .children {
 /* 2. Section */
 .section {
   position: relative;
-  padding: 0 50px 150px 50px;
+  padding: 0 50px 100px 50px;
   z-index: 97;
   opacity: 1;
   visibility: visible;
@@ -365,13 +365,7 @@ header .head-top .top-menu ul li:hover > .children {
 
 .section .content .title {
   position: relative;
-  margin-bottom: 40px;
-}
-
-@media (max-width: 600px) {
-  .section .content .title {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
 }
 
 @media (max-width: 400px) {

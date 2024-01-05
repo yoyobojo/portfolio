@@ -31,7 +31,7 @@ const Services = () => {
             <div className="icon">
               <span className="ion ion-code" />
             </div>
-            <div className="name">Figma</div>
+            <div className="name">Peer-to-Peer Networking</div>
             <p>Morbi nulla arcu, pellentesque sed egestas in.</p>
           </div>
           <div className="service-item">
@@ -45,7 +45,7 @@ const Services = () => {
             <div className="icon">
               <span className="ion ion-ipad" />
             </div>
-            <div className="name">Confluence / Notion</div>
+            <div className="name">Frontend Frameworks</div>
             <p>Morbi nulla arcu, pellentesque sed egestas in.</p>
           </div>
         </div>

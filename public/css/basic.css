@@ -622,14 +622,14 @@ blockquote {
   .glitch-effect-white:after {
     left: 2px;
     text-shadow: -1px 0 #f26b38;
-    animation: glitch-1 4s infinite linear alternate-reverse;
+    animation: glitch-1 8s infinite linear alternate-reverse;
   }
 
   .glitch-effect:before,
   .glitch-effect-white:before {
     left: -2px;
     text-shadow: 2px 0 #f26b38;
-    animation: glitch-2 4s infinite linear alternate-reverse;
+    animation: glitch-2 6s infinite linear alternate-reverse;
   }
 }
 
