@@ -433,7 +433,7 @@ header .head-top .top-menu ul li:hover > .children {
 
 @media (max-width: 840px) {
   .section.started .started-content {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
 
   .section.started .started-content .h-title {
