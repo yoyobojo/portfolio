@@ -1,30 +1,13 @@
 "use client";
-import { context } from "@/stores/global";
-import FsLightbox from "fslightbox-react";
 import Isotope from "isotope-layout";
 import {
   Fragment,
   useCallback,
-  useContext,
   useEffect,
   useRef,
   useState,
 } from "react";
-
-const galleryImages = {
-  1: [
-    "images/works/work1.jpg",
-    "images/works/work2.jpg",
-    "images/works/work3.jpg",
-    "images/works/work4.jpg",
-  ],
-  2: [
-    "images/works/work5.jpg",
-    "images/works/work2.jpg",
-    "images/works/work3.jpg",
-    "images/works/work4.jpg",
-  ],
-};
+import { Thumbnail } from "@/ui/components";
 
 const Portfolio = () => {
   // Isotope
@@ -64,17 +47,8 @@ const Portfolio = () => {
 
   const activeBtn = (value) => (value === filterKey ? "glitch-effect" : "");
 
-  const [activeGallaryImage, setActiveGallaryImage] = useState(1);
-  const [gallery, setGallery] = useState(false);
-
-  const { modalToggle, setPortfolioModal } = useContext(context);
-
   return (
     <Fragment>
-      <FsLightbox
-        toggler={gallery}
-        sources={galleryImages[activeGallaryImage]}
-      />
       <div className="section works section_" id="works">
         <div className="content pt-4">
           <div className="title">
@@ -123,102 +97,29 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="box-items portfolio-items">
-            <div className="box-item f-links">
-              <div className="image">
-                <a
-                  href="https://beshley.com/"
-                  className="has-popup-link"
-                  target="_blank"
-                >
-                  <img src="images/works/work8.jpg" alt />
-                  <span className="info">
-                    <span className="centrize full-width">
-                      <span className="vertical-center">
-                        <span className="ion ion-link" />
-                      </span>
-                    </span>
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <div className="category">Links</div>
-                <a href="https://beshley.com/" className="name has-popup-link">
-                  Lorem Ipsum
-                </a>
-              </div>
-            </div>
-            <div className="box-item f-content">
-              <div className="image">
-                <a
-                  href="#popup-1"
-                  className="has-popup-media"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    modalToggle(true);
-                    setPortfolioModal(true);
-                  }}
-                >
-                  <img src="images/works/work3.jpg" alt />
-                  <span className="info">
-                    <span className="centrize full-width">
-                      <span className="vertical-center">
-                        <span className="ion ion-ios-plus-empty" />
-                      </span>
-                    </span>
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <div className="category">Content</div>
-                <a
-                  href="#popup-1"
-                  className="name has-popup-media"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    modalToggle(true);
-                    setPortfolioModal(true);
-                  }}
-                >
-                  Lorem Ipsum
-                </a>
-              </div>
-            </div>
-            <div className="box-item f-content">
-              <div className="image">
-                <a
-                  href="#popup-2"
-                  className="has-popup-media"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    modalToggle(true);
-                    setPortfolioModal(true);
-                  }}
-                >
-                  <img src="images/works/work3.jpg" alt />
-                  <span className="info">
-                    <span className="centrize full-width">
-                      <span className="vertical-center">
-                        <span className="ion ion-ios-plus-empty" />
-                      </span>
-                    </span>
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <div className="category">Content</div>
-                <a
-                  href="#popup-2"
-                  className="name has-popup-media"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    modalToggle(true);
-                    setPortfolioModal(true);
-                  }}
-                >
-                  Lorem Ipsum
-                </a>
-              </div>
-            </div>
+            <Thumbnail 
+              type="link"
+              title="Lorem Ipsum"
+              link="https://beshley.com/"
+              category="Links"
+              img="images/works/work8.jpg"
+            />
+            <Thumbnail 
+              type="modal"
+              title="Lorem Ipsum"
+              link="https://beshley.com/"
+              category="Content"
+              description="Lorem Ipsum blah blah"
+              img="images/works/work3.jpg"
+            />
+                        <Thumbnail 
+              type="modal"
+              title="Lorem Ipsum"
+              link="https://beshley.com/"
+              category="Content"
+              description="Lorem Ipsum blah blah"
+              img="images/works/work3.jpg"
+            />
           </div>
           <div className="clear" />
         </div>

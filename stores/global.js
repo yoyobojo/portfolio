@@ -7,7 +7,7 @@ const type = {
 };
 const { MODAL, PORTFOLIOMODAL, BLOGMODAL, GALLERY } = type;
 
-import { createContext, useCallback, useReducer } from "react";
+import { createContext, useCallback, useContext, useReducer } from "react";
 
 const context = createContext();
 
@@ -94,6 +94,8 @@ const state = (props) => {
   );
 };
 
+const useGlobalContext = () => useContext(context);
+
 export default state;
 
-export { context };
+export { context, useGlobalContext };
