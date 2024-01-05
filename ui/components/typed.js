@@ -22,6 +22,7 @@ export class TypedStrings extends React.Component {
           <span
             style={{ whiteSpace: 'pre' }}
             ref={(el) => { this.el = el; }}
+            className={this.props?.size && this.props.size === 'lg' ? 'h-title' : ''}
           />
         </div>
       </div>

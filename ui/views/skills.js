@@ -48,13 +48,14 @@ export const DesignSkills = () => {
 };
 export const CodingSkills = () => {
   const skills = [
-    { id: 1, title: "WordPress", value: 90 },
-    { id: 2, title: "PHP / MYSQL", value: 75 },
-    { id: 3, title: "Angular / JavaScript", value: 85 },
-    { id: 4, title: "HTML / CSS", value: 95 },
+    { id: 1, title: "JS / TS", value: 100 },
+    { id: 2, title: "SQL", value: 95 },
+    { id: 3, title: "Python", value: 75 },
+    { id: 4, title: "Solidity", value: 70 },
+    { id: 5, title: "Rust", value: 40 },
   ];
   return (
-    <div className="section skills">
+    <div className="section skills section_" id="skills">
       <div className="content">
         <div className="title">
           <div className="title_inner">Coding Skills</div>
@@ -133,7 +134,7 @@ const Skills = ({
 }) => {
   return (
     <Fragment>
-            {coding && <CodingSkills />}
+      {coding && <CodingSkills />}
       {design && <DesignSkills />}
       {knowledge && <Knowledge />}
     </Fragment>

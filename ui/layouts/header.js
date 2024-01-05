@@ -49,8 +49,8 @@ export const Header = () => {
               </a>
             </li>
             <li className="">
-              <a href="#services" className="lnk">
-                Services
+              <a href="#skills" className="lnk">
+                Skills
               </a>
             </li>
             <li className="">

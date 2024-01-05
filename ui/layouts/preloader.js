@@ -17,7 +17,7 @@ export const Preloader = () => {
     });
 
     function fadeOut(element, duration, callback) {
-      var opacity = 8;
+      var opacity = 6;
       var interval = 1000 / 60; // 60 frames per second
       var step = opacity / (duration / interval);
 

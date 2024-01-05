@@ -64,7 +64,7 @@ const Resume = () => {
                 </p>
               </div>
               <div className="resume-item">
-                <div className="date">2004 - 2006</div>
+                <div className="date">Aug. 2017 - May 2019</div>
                 <div className="name">NYU Men’s Varsity Soccer</div>
                 <ul className="dotted-list">
                   <li>Competed in the NCAA Division III and NCAA National Tournament, achieving UAA All-Academic</li>
