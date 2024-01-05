@@ -79,7 +79,13 @@ header.active .head-top .top-menu ul li {
 }
 
 header .head-top {
-  padding: 14px 24px;
+  padding: 14px 32px;
+}
+
+@media (max-width: 840px) {
+  header .head-top {
+    padding: 14px 24px;
+  }
 }
 
 header .head-top .menu-btn {
