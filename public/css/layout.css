@@ -483,6 +483,12 @@ header .head-top .top-menu ul li:hover > .children {
   margin-left: -10px;
 }
 
+@media (max-width: 840px) {
+  .section.started .mouse_btn {
+    bottom: 180px;
+  }
+}
+
 .section.started .mouse_btn .ion {
   position: relative;
   top: 0px;
