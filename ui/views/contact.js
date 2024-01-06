@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <div className="section contacts section_" id="contact">
-      <div className="content">
+      <div className="content pb-4">
         <div className="title">
           <div className="title_inner">Contact</div>
         </div>

@@ -96,28 +96,44 @@ export const Knowledge = () => {
         <div className="skills list">
           <ul>
             <li>
-              <div className="name">Javascript / Typescript</div>
+              <LanguageHighlight src="/images/logos/javascript-logo.svg">
+                Javascript / Typescript
+              </LanguageHighlight>
             </li>
             <li>
-              <div className="name">NodeJS / Express</div>
+              <LanguageHighlight src="/images/logos/nodejs-logo.svg">
+                NodeJS / Express
+              </LanguageHighlight>
             </li>
             <li>
-              <div className="name">SQL / NoSQL</div>
+              <LanguageHighlight src="/images/logos/database-logo.svg">
+                SQL / NoSQL
+              </LanguageHighlight>
             </li>
             <li>
-              <div className="name">Python / Django</div>
+              <LanguageHighlight src="/images/logos/python-logo.svg">
+                Python / Django
+              </LanguageHighlight>
             </li>
             <li>
-              <div className="name">Solidity</div>
+              <LanguageHighlight src="/images/logos/solidity-logo.svg">
+                Solidity
+              </LanguageHighlight>
             </li>
             <li>
-              <div className="name">Linux Systems</div>
+              <LanguageHighlight src="/images/logos/linux-logo.svg">
+                Linux Systems
+              </LanguageHighlight>
             </li>
             <li>
-              <div className="name">HTML / CSS</div>
+              <LanguageHighlight src="/images/logos/web-dev-logo.svg">
+                HTML / CSS
+              </LanguageHighlight>
             </li>
             <li>
-              <div className="name">Rust</div>
+              <LanguageHighlight src="/images/logos/rust-logo.svg">
+                Rust
+              </LanguageHighlight>
             </li>
           </ul>
         </div>
@@ -127,6 +143,7 @@ export const Knowledge = () => {
 };
 
 import { Fragment } from "react";
+import { LanguageHighlight, Icon, IconTitle, LanguageLanguageHighlight } from "../components";
 const Skills = ({
   design = true,
   coding = true,

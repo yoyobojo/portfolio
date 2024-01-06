@@ -1,3 +1,5 @@
+import { TechnologyHighlight } from "../components";
+
 const Services = () => {
   return (
     <div className="section service section_" id="services">
@@ -6,48 +8,42 @@ const Services = () => {
           <div className="title_inner">Familiar Technologies</div>
         </div>
         <div className="service-items">
-          <div className="service-item">
-            <div className="icon">
-              <span className="ion ion-help-buoy" />
-            </div>
-            <div className="name">AWS Services</div>
-            <p>Solve real-world business problems with trending technologies and solutions.</p>
-          </div>
-          <div className="service-item">
-            <div className="icon">
-              <span className="ion ion-social-html5" />
-            </div>
-            <div className="name">Azure Devops</div>
-            <p>Morbi nulla arcu, pellentesque sed egestas in.</p>
-          </div>
-          <div className="service-item">
-            <div className="icon">
-              <span className="ion ion-ios-search-strong" />
-            </div>
-            <div className="name">Foundry / Anvil</div>
-            <p>Morbi nulla arcu, pellentesque sed egestas in.</p>
-          </div>
-          <div className="service-item">
-            <div className="icon">
-              <span className="ion ion-code" />
-            </div>
-            <div className="name">Peer-to-Peer Networking</div>
-            <p>Morbi nulla arcu, pellentesque sed egestas in.</p>
-          </div>
-          <div className="service-item">
-            <div className="icon">
-              <span className="ion ion-social-chrome" />
-            </div>
-            <div className="name">Telegram / Discord Bots</div>
-            <p>Morbi nulla arcu, pellentesque sed egestas in.</p>
-          </div>
-          <div className="service-item">
-            <div className="icon">
-              <span className="ion ion-ipad" />
-            </div>
-            <div className="name">Frontend Frameworks</div>
-            <p>Morbi nulla arcu, pellentesque sed egestas in.</p>
-          </div>
+          <TechnologyHighlight 
+            src="/images/logos/react-logo.svg"
+            description="Morbi nulla arcu, pellentesque sed egestas in."
+          >
+            Frontend Frameworks
+          </TechnologyHighlight>
+          <TechnologyHighlight 
+            src="/images/logos/api-logo.svg"
+            description="Morbi nulla arcu, pellentesque sed egestas in."
+          >
+            Rest APIs & Web Sockets
+          </TechnologyHighlight>
+          <TechnologyHighlight 
+            src="/images/logos/aws-logo.svg"
+            description="Morbi nulla arcu, pellentesque sed egestas in."
+          >
+            AWS Services
+          </TechnologyHighlight>
+          <TechnologyHighlight 
+            src="/images/logos/azure-devops-logo.svg"
+            description="Morbi nulla arcu, pellentesque sed egestas in."
+          >
+            Azure Devops
+          </TechnologyHighlight>
+          <TechnologyHighlight 
+            src="/images/logos/foundry-logo.png"
+            description="Morbi nulla arcu, pellentesque sed egestas in."
+          >
+            Foundry / Anvil
+          </TechnologyHighlight>
+          <TechnologyHighlight 
+            src="/images/logos/network-logo.svg"
+            description="Morbi nulla arcu, pellentesque sed egestas in."
+          >
+            Peer-to-Peer Networking
+          </TechnologyHighlight>
         </div>
       </div>
     </div>

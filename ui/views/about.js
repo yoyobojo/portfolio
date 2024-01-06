@@ -1,5 +1,6 @@
 import { LINKS } from "@/utils/constants";
 import { calcTimeDifference } from "@/utils/helpers"
+import { OnePageLink } from "../components";
 
 const About = () => {
   return (
@@ -32,15 +33,17 @@ const About = () => {
             </ul>
           </div>
           <p>
-            I am a New York University graduate where I studied Economics, Computer 
-            Science, and Mathematics. After graduating from college, I began working 
-            in the{" "}
+            GM! Glad you found me! They known as ALo in the ether, but you can call me Angello. 
+          </p>
+          <p>
+            I studied Economics, Computer Science, and Mathematics at New York University. 
+            Lucky for me, I landed a job with the{" "}
             <a href={LINKS.ibmix} target="_blank" style={{ textDecoration: "underline" }}>iX Team at IBM</a>
-            {" "}as a software engineer and consultant. After gaining
+            {" "}as a software engineer and consultant after graduation. After gaining
             business knowledge there and learning valuable corporate skills, I decided 
             to start{" "}
             <a href={LINKS.suavetech} target="_blank" style={{ textDecoration: "underline" }}>Suave Tech Solutions</a>
-            , a tech consulting company focusing on blockchain and automation, where 
+            , a tech consulting company focusing on blockchain, web development, and automation, where 
             I could more actively choose the work I'm involved in.
           </p>
           <p>
@@ -54,9 +57,9 @@ const About = () => {
             </a>
           </div>
           <div className="lnk">
-            <a href="#works" style={{ textDecoration: "underline" }} data-text="View Recent Works">
+            <OnePageLink href="#works">
               View Recent Works
-            </a>
+            </OnePageLink>
           </div>
           </div>
         </div>
