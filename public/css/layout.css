@@ -1231,6 +1231,10 @@ a.btn,
   -o-transition: background 0.3s ease 0s;
 }
 
+a.btn:hover {
+  color: #fff !important;
+}
+
 /* 6. Skills */
 .skills ul {
   margin: 0;
