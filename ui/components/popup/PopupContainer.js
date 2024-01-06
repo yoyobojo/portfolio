@@ -1,7 +1,7 @@
-"use client";
-import { context } from "@/stores/global";
-import useClickOutside from "@/hooks/use-click-outside";
-import { Fragment, useContext } from "react";
+'use client';
+import { context } from '@/stores/global';
+import useClickOutside from '@/hooks/use-click-outside';
+import { Fragment, useContext } from 'react';
 
 const PopContainer = ({ children, nullValue }) => {
   const { modalToggle, modal } = useContext(context);
@@ -22,7 +22,7 @@ const PopContainer = ({ children, nullValue }) => {
       <div
         className="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-fade mfp-ready"
         tabIndex={-1}
-        style={{ overflow: "hidden auto" }}
+        style={{ overflow: 'hidden auto' }}
       >
         <div className="mfp-container mfp-s-ready mfp-inline-holder">
           <div className="mfp-content" ref={domNode}>

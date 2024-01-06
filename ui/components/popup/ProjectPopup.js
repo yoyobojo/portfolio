@@ -1,7 +1,7 @@
-"use client";
-import { context } from "@/stores/global";
-import { useContext } from "react";
-import PopContainer from "./PopupContainer";
+'use client';
+import { context } from '@/stores/global';
+import { useContext } from 'react';
+import PopContainer from './PopupContainer';
 const ProjectPopup = () => {
   const { setPortfolioModal, portfolioModal } = useContext(context);
   return (

@@ -1,19 +1,19 @@
-"use client";
-import { useEffect } from "react";
-import {TypedStrings} from "@/ui/components/typed"
+'use client';
+import { useEffect } from 'react';
+import { TypedStrings } from '@/ui/components/typed';
 
 export const Preloader = () => {
   useEffect(() => {
-    var preInner = document.querySelector(".preloader .pre-inner");
+    var preInner = document.querySelector('.preloader .pre-inner');
 
     // Fade out .pre-inner element
     fadeOut(preInner, 2000, function () {
       // Preload hide
-      var preloader = document.querySelector(".preloader");
-      preloader.style.display = "none";
+      var preloader = document.querySelector('.preloader');
+      preloader.style.display = 'none';
 
       // Add 'loaded' class to body
-      document.body.classList.add("loaded");
+      document.body.classList.add('loaded');
     });
 
     function fadeOut(element, duration, callback) {
@@ -27,7 +27,7 @@ export const Preloader = () => {
 
         if (opacity <= 0) {
           clearInterval(fadeInterval);
-          if (typeof callback === "function") {
+          if (typeof callback === 'function') {
             callback();
           }
         }
@@ -41,15 +41,13 @@ export const Preloader = () => {
       <div className="centrize full-width">
         <div className="vertical-center">
           <div className="pre-inner">
-          <TypedStrings
-    strings={[
-        'loading...',
-    ]}
-    options={{
-            loop: false,
-      typeSpeed: 60,
-    }}
-  />
+            <TypedStrings
+              strings={['loading...']}
+              options={{
+                loop: false,
+                typeSpeed: 60
+              }}
+            />
           </div>
         </div>
       </div>

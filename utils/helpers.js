@@ -5,7 +5,7 @@ export function calcTimeDifference(date1, date2, units = 'days') {
   const ONE_YEAR = ONE_DAY * 365;
   const differenceMs = Math.abs(date1 - date2);
   let dividingUnits;
-  switch(units) {
+  switch (units) {
     case 'years': {
       dividingUnits = ONE_YEAR;
       break;
@@ -19,8 +19,8 @@ export function calcTimeDifference(date1, date2, units = 'days') {
       break;
     }
     default: {
-        dividingUnits = ONE_DAY;
-        break;
+      dividingUnits = ONE_DAY;
+      break;
     }
   }
   return Math.round(differenceMs / dividingUnits);

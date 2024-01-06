@@ -1,4 +1,4 @@
-"use client";
+'use client';
 export const DesignSkills = () => {
   return (
     <div className="section skills">
@@ -11,7 +11,7 @@ export const DesignSkills = () => {
             <li>
               <div className="name">Web Design</div>
               <div className="progress">
-                <div className="percentage" style={{ width: "70%" }}>
+                <div className="percentage" style={{ width: '70%' }}>
                   <span className="percent">70%</span>
                 </div>
               </div>
@@ -19,7 +19,7 @@ export const DesignSkills = () => {
             <li>
               <div className="name">Illustrations</div>
               <div className="progress">
-                <div className="percentage" style={{ width: "90%" }}>
+                <div className="percentage" style={{ width: '90%' }}>
                   <span className="percent">90%</span>
                 </div>
               </div>
@@ -27,7 +27,7 @@ export const DesignSkills = () => {
             <li>
               <div className="name">Photoshop</div>
               <div className="progress">
-                <div className="percentage" style={{ width: "75%" }}>
+                <div className="percentage" style={{ width: '75%' }}>
                   <span className="percent">75%</span>
                 </div>
               </div>
@@ -35,7 +35,7 @@ export const DesignSkills = () => {
             <li>
               <div className="name">Graphic Design</div>
               <div className="progress">
-                <div className="percentage" style={{ width: "80%" }}>
+                <div className="percentage" style={{ width: '80%' }}>
                   <span className="percent">80%</span>
                 </div>
               </div>
@@ -48,11 +48,11 @@ export const DesignSkills = () => {
 };
 export const CodingSkills = () => {
   const skills = [
-    { id: 1, title: "JS / TS", value: 100 },
-    { id: 2, title: "SQL", value: 90 },
-    { id: 3, title: "Python", value: 75 },
-    { id: 4, title: "Solidity", value: 70 },
-    { id: 5, title: "Rust", value: 40 },
+    { id: 1, title: 'JS / TS', value: 100 },
+    { id: 2, title: 'SQL', value: 90 },
+    { id: 3, title: 'Python', value: 75 },
+    { id: 4, title: 'Solidity', value: 70 },
+    { id: 5, title: 'Rust', value: 40 }
   ];
   return (
     <div className="section skills">
@@ -142,19 +142,15 @@ export const Knowledge = () => {
   );
 };
 
-import { Fragment } from "react";
-import { LanguageHighlight } from "@/ui/components";
-const Skills = ({
-  design = true,
-  coding = true,
-  knowledge = true,
-}) => {
+import { Fragment } from 'react';
+import { LanguageHighlight } from '@/ui/components';
+const Skills = ({ design = true, coding = true, knowledge = true }) => {
   return (
     <Fragment>
       <div className="skills section_ pt-4" id="skills">
-      {coding && <CodingSkills />}
-      {design && <DesignSkills />}
-      {knowledge && <Knowledge />}
+        {coding && <CodingSkills />}
+        {design && <DesignSkills />}
+        {knowledge && <Knowledge />}
       </div>
     </Fragment>
   );

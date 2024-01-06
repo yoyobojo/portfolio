@@ -1,13 +1,13 @@
-"use client";
+'use client';
 const type = {
-  MODAL: "MODAL",
-  PORTFOLIOMODAL: "PORTFOLIOMODAL",
-  BLOGMODAL: "BLOGMODAL",
-  GALLERY: "GALLERY",
+  MODAL: 'MODAL',
+  PORTFOLIOMODAL: 'PORTFOLIOMODAL',
+  BLOGMODAL: 'BLOGMODAL',
+  GALLERY: 'GALLERY'
 };
 const { MODAL, PORTFOLIOMODAL, BLOGMODAL, GALLERY } = type;
 
-import { createContext, useCallback, useContext, useReducer } from "react";
+import { createContext, useCallback, useContext, useReducer } from 'react';
 
 const context = createContext();
 
@@ -17,22 +17,22 @@ const reducer = (state, action) => {
     case MODAL:
       return {
         ...state,
-        modal: payload,
+        modal: payload
       };
     case PORTFOLIOMODAL:
       return {
         ...state,
-        portfolioModal: payload,
+        portfolioModal: payload
       };
     case BLOGMODAL:
       return {
         ...state,
-        blogModal: payload,
+        blogModal: payload
       };
     case GALLERY:
       return {
         ...state,
-        gallery: payload,
+        gallery: payload
       };
     default:
       return state;
@@ -44,34 +44,34 @@ const state = (props) => {
     modal: false,
     portfolioModal: null,
     blogModal: null,
-    gallery: false,
+    gallery: false
   };
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const modalToggle = useCallback((value) => {
     dispatch({
       type: MODAL,
-      payload: value,
+      payload: value
     });
   }, []);
 
   const setPortfolioModal = useCallback((value) => {
     dispatch({
       type: PORTFOLIOMODAL,
-      payload: value,
+      payload: value
     });
   }, []);
   const setBlogModal = useCallback((value) => {
     dispatch({
       type: BLOGMODAL,
-      payload: value,
+      payload: value
     });
   }, []);
   const setGallery = useCallback((value) => {
     console.log(value);
     dispatch({
       type: GALLERY,
-      payload: value,
+      payload: value
     });
   }, []);
 
@@ -86,7 +86,7 @@ const state = (props) => {
         blogModal,
         setBlogModal,
         gallery,
-        setGallery,
+        setGallery
       }}
     >
       {props.children}

@@ -1,32 +1,32 @@
-"use client";
-import Isotope from "isotope-layout";
-import { useEffect, useRef, useState } from "react";
+'use client';
+import Isotope from 'isotope-layout';
+import { useEffect, useRef, useState } from 'react';
 
 const Clients = () => {
   // Isotope
   const isotope = useRef();
-  const [filterKey, setFilterKey] = useState("*");
+  const [filterKey, setFilterKey] = useState('*');
   useEffect(() => {
     setTimeout(() => {
-      isotope.current = new Isotope(".box-items", {
-        itemSelector: ".box-item",
+      isotope.current = new Isotope('.box-items', {
+        itemSelector: '.box-item',
         // layoutMode: "fitRows",
         percentPosition: true,
         masonry: {
-          columnWidth: ".box-item",
+          columnWidth: '.box-item'
         },
         animationOptions: {
           duration: 750,
-          easing: "linear",
-          queue: false,
-        },
+          easing: 'linear',
+          queue: false
+        }
       });
     }, 1000);
     // return () => isotope.current.destroy();
   }, []);
   useEffect(() => {
     if (isotope.current) {
-      filterKey === "*"
+      filterKey === '*'
         ? isotope.current.arrange({ filter: `*` })
         : isotope.current.arrange({ filter: `.${filterKey}` });
     }

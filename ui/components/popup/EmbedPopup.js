@@ -1,7 +1,7 @@
-"use client";
-import useClickOutside from "@/hooks/use-click-outside";
-import { Fragment, useEffect, useState } from "react";
-import ReactPlayer from "react-player";
+'use client';
+import useClickOutside from '@/hooks/use-click-outside';
+import { Fragment, useEffect, useState } from 'react';
+import ReactPlayer from 'react-player';
 
 const EmbedPopup_ = ({ close, videoID }) => {
   const domNode = useClickOutside(() => {
@@ -14,7 +14,7 @@ const EmbedPopup_ = ({ close, videoID }) => {
       <div
         className="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready"
         tabIndex={-1}
-        style={{ overflow: "hidden auto" }}
+        style={{ overflow: 'hidden auto' }}
       >
         <div className="mfp-container popup-container mfp-s-ready mfp-iframe-holder">
           <div className="mfp-content" ref={domNode}>
@@ -43,14 +43,14 @@ const EmbedPopup = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      const a = document.querySelectorAll("a");
+      const a = document.querySelectorAll('a');
       a.forEach((a) => {
         if (
-          a.href.includes("youtu.be") ||
-          a.href.includes("vimeo.com") ||
-          a.href.includes("soundcloud.com")
+          a.href.includes('youtu.be') ||
+          a.href.includes('vimeo.com') ||
+          a.href.includes('soundcloud.com')
         ) {
-          a.addEventListener("click", (e) => {
+          a.addEventListener('click', (e) => {
             e.preventDefault();
             setVideoValue(a.href);
             setVideo(true);

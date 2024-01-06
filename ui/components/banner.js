@@ -1,21 +1,20 @@
-"use client";
-import Link from "next/link";
-import { useEffect } from "react";
+'use client';
+import Link from 'next/link';
+import { useEffect } from 'react';
 
 export const Banner = ({ pageName, pageLink, dark }) => {
   useEffect(() => {
-    var sections = document.querySelectorAll(".section");
+    var sections = document.querySelectorAll('.section');
     sections.forEach(function (section) {
-      console.log(section);
-      section.addEventListener("click", function (event) {
-        if (event.target.classList.contains("mouse")) {
+      section.addEventListener('click', function (event) {
+        if (event.target.classList.contains('mouse')) {
           var height = window.innerHeight;
           var scrollOptions = {
             top: height - 150,
-            behavior: "smooth", // For smooth scrolling (modern browsers)
+            behavior: 'smooth' // For smooth scrolling (modern browsers)
           };
 
-          if ("scrollBehavior" in document.documentElement.style) {
+          if ('scrollBehavior' in document.documentElement.style) {
             // If smooth scrolling is supported
             window.scrollTo(scrollOptions);
           } else {
@@ -28,7 +27,7 @@ export const Banner = ({ pageName, pageLink, dark }) => {
   }, []);
 
   return (
-    <div className="section started" style={{ height: "96vh" }}>
+    <div className="section started" style={{ height: '96vh' }}>
       <div className="centrize full-width">
         <div className="vertical-center">
           <div className="started-content">
@@ -37,7 +36,7 @@ export const Banner = ({ pageName, pageLink, dark }) => {
             </div>
             <div className="h-subtitle typing-bread">
               <p>
-                <Link href={`/${dark ? "index-dark" : ""}`}>Home</Link> /{" "}
+                <Link href={`/${dark ? 'index-dark' : ''}`}>Home</Link> /{' '}
                 <Link href={pageLink}>{pageName}</Link>
               </p>
             </div>

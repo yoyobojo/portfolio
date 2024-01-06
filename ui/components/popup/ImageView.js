@@ -1,5 +1,5 @@
-import useClickOutside from "@/hooks/use-click-outside";
-import { Fragment, useEffect, useState } from "react";
+import useClickOutside from '@/hooks/use-click-outside';
+import { Fragment, useEffect, useState } from 'react';
 
 const ImgViews = ({ close, src }) => {
   let domNode = useClickOutside(() => {
@@ -11,7 +11,7 @@ const ImgViews = ({ close, src }) => {
       <div
         className="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready"
         tabIndex={-1}
-        style={{ overflow: "hidden auto" }}
+        style={{ overflow: 'hidden auto' }}
       >
         <div
           className={`mfp-container mfp-s-ready mfp-iframe-holder mfp-img-container`}
@@ -34,11 +34,11 @@ const ImageView = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      const a = document.querySelectorAll("a");
+      const a = document.querySelectorAll('a');
       a.forEach((a) => {
-        if (a.href.includes("images/")) {
-          if (a.getAttribute("download") === null) {
-            a.addEventListener("click", (e) => {
+        if (a.href.includes('images/')) {
+          if (a.getAttribute('download') === null) {
+            a.addEventListener('click', (e) => {
               e.preventDefault();
               setImgValue(a.href);
               setImg(true);

@@ -1,14 +1,14 @@
-import { Base } from "@/ui/base/layout";
-import Hero from "@/ui/views/hero";
-import About from "@/ui/views/about";
-import Resume from "@/ui/views/resume";
-import Services from "@/ui/views/services";
-import Contact from "@/ui/views/contact";
-import Skills from "@/ui/views/skills";
+import { Base } from '@/ui/base/layout';
+import Hero from '@/ui/views/hero';
+import About from '@/ui/views/about';
+import Resume from '@/ui/views/resume';
+import Services from '@/ui/views/services';
+import Contact from '@/ui/views/contact';
+import Skills from '@/ui/views/skills';
 
-import dynamic from "next/dynamic";
-const Portfolio = dynamic(() => import("@/ui/views/portfolio"), {
-  ssr: false,
+import dynamic from 'next/dynamic';
+const Portfolio = dynamic(() => import('@/ui/views/portfolio'), {
+  ssr: false
 });
 
 const Page = () => {

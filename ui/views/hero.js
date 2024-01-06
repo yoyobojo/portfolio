@@ -1,26 +1,26 @@
-"use client";
-import { TypedStrings, GlitchText } from "@/ui/components";
+'use client';
+import { TypedStrings, GlitchText } from '@/ui/components';
 
 const Hero = ({ mouse }) => {
   return (
-    <div className="section started" style={{ height: "96vh" }}>
+    <div className="section started" style={{ height: '96vh' }}>
       <div className="centrize full-width">
         <div className="vertical-center">
           <div className="started-content">
             <span>GM! My name is</span>
             <GlitchText text="Angello Lazar" />
-            <TypedStrings 
+            <TypedStrings
               strings={[
-                "I am a dreamer.",
-                "I am a software engineer.",
-                "I am a blockchain nerd.",
-                "I am a fitness freak."
+                'I am a dreamer.',
+                'I am a software engineer.',
+                'I am a blockchain nerd.',
+                'I am a fitness freak.'
               ]}
               options={{
                 loop: true,
                 typeSpeed: 80,
                 backSpeed: 40,
-                backDelay: 800,
+                backDelay: 800
               }}
             />
           </div>

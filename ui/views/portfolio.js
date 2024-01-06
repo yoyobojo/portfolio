@@ -1,39 +1,33 @@
-"use client";
-import Isotope from "isotope-layout";
-import {
-  Fragment,
-  useCallback,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
-import { Thumbnail } from "@/ui/components";
+'use client';
+import Isotope from 'isotope-layout';
+import { Fragment, useCallback, useEffect, useRef, useState } from 'react';
+import { Thumbnail } from '@/ui/components';
 
 const Portfolio = () => {
   // Isotope
   const isotope = useRef();
-  const [filterKey, setFilterKey] = useState("*");
+  const [filterKey, setFilterKey] = useState('*');
   useEffect(() => {
     setTimeout(() => {
-      isotope.current = new Isotope(".portfolio-items", {
-        itemSelector: ".box-item",
+      isotope.current = new Isotope('.portfolio-items', {
+        itemSelector: '.box-item',
         // layoutMode: "fitRows",
         percentPosition: true,
         masonry: {
-          columnWidth: ".box-item",
+          columnWidth: '.box-item'
         },
         animationOptions: {
           duration: 750,
-          easing: "linear",
-          queue: false,
-        },
+          easing: 'linear',
+          queue: false
+        }
       });
     }, 1000);
     // return () => isotope.current.destroy();
   }, []);
   useEffect(() => {
     if (isotope.current) {
-      filterKey === "*"
+      filterKey === '*'
         ? isotope.current.arrange({ filter: `*` })
         : isotope.current.arrange({ filter: `.${filterKey}` });
     }
@@ -45,7 +39,7 @@ const Portfolio = () => {
     []
   );
 
-  const activeBtn = (value) => (value === filterKey ? "glitch-effect" : "");
+  const activeBtn = (value) => (value === filterKey ? 'glitch-effect' : '');
 
   return (
     <Fragment>
@@ -59,8 +53,8 @@ const Portfolio = () => {
               <div className="btn-group">
                 <label
                   data-text="All"
-                  className={`c-pointer ${activeBtn("*")}`}
-                  onClick={handleFilterKeyChange("*")}
+                  className={`c-pointer ${activeBtn('*')}`}
+                  onClick={handleFilterKeyChange('*')}
                 >
                   <input
                     type="radio"
@@ -73,8 +67,8 @@ const Portfolio = () => {
               <div className="btn-group">
                 <label
                   data-text="Links"
-                  className={`c-pointer ${activeBtn("f-links")}`}
-                  onClick={handleFilterKeyChange("f-links")}
+                  className={`c-pointer ${activeBtn('f-links')}`}
+                  onClick={handleFilterKeyChange('f-links')}
                 >
                   <input type="radio" name="fl_radio" defaultValue=".f-links" />
                   Links
@@ -83,8 +77,8 @@ const Portfolio = () => {
               <div className="btn-group">
                 <label
                   data-text="Content"
-                  className={`c-pointer ${activeBtn("f-content")}`}
-                  onClick={handleFilterKeyChange("f-content")}
+                  className={`c-pointer ${activeBtn('f-content')}`}
+                  onClick={handleFilterKeyChange('f-content')}
                 >
                   <input
                     type="radio"
@@ -97,14 +91,14 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="box-items portfolio-items">
-            <Thumbnail 
+            <Thumbnail
               type="link"
               title="Lorem Ipsum"
               link="https://beshley.com/"
               category="Links"
               img="images/works/work8.jpg"
             />
-            <Thumbnail 
+            <Thumbnail
               type="modal"
               title="Lorem Ipsum"
               link="https://beshley.com/"
@@ -112,7 +106,7 @@ const Portfolio = () => {
               description="Lorem Ipsum blah blah"
               img="images/works/work3.jpg"
             />
-            <Thumbnail 
+            <Thumbnail
               type="modal"
               title="Lorem Ipsum"
               link="https://beshley.com/"

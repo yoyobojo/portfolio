@@ -1,6 +1,6 @@
-import { context } from "@/stores/global";
-import FsLightbox from "fslightbox-react";
-import { Fragment, useContext } from "react";
+import { context } from '@/stores/global';
+import FsLightbox from 'fslightbox-react';
+import { Fragment, useContext } from 'react';
 const ImageGallery = () => {
   const { gallery, setGallery } = useContext(context);
 
@@ -9,10 +9,10 @@ const ImageGallery = () => {
       <FsLightbox
         toggler={gallery}
         sources={[
-          "images/works/work1.jpg",
-          "images/works/work2.jpg",
-          "images/works/work3.jpg",
-          "images/works/work4.jpg",
+          'images/works/work1.jpg',
+          'images/works/work2.jpg',
+          'images/works/work3.jpg',
+          'images/works/work4.jpg'
         ]}
       />
     </Fragment>

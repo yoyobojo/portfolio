@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from 'react';
 
 const useClickOutside = (handler) => {
   const domNode = useRef(null);
@@ -10,10 +10,10 @@ const useClickOutside = (handler) => {
       }
     };
 
-    document.addEventListener("mousedown", maybeHandler);
+    document.addEventListener('mousedown', maybeHandler);
 
     return () => {
-      document.removeEventListener("mousedown", maybeHandler);
+      document.removeEventListener('mousedown', maybeHandler);
     };
   }, [handler]);
 

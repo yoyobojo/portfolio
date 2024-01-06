@@ -17,7 +17,7 @@ const Contact = () => {
               <textarea
                 name="message"
                 placeholder="Message"
-                defaultValue={""}
+                defaultValue={''}
               />
             </div>
             <a href="#" className="btn fill" data-text="Send Message">

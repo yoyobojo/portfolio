@@ -97,7 +97,7 @@ header .head-top .menu-btn {
 
 header .head-top .menu-btn:before,
 header .head-top .menu-btn:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -190,13 +190,13 @@ header .logo {
   padding-top: 0;
   max-width: 80px;
   float: left;
-  font-size: 0
+  font-size: 0;
 }
 
 header .logo img {
   max-width: 100%;
   height: auto;
-  display: block
+  display: block;
 }
 
 header .logo a {
@@ -205,23 +205,23 @@ header .logo a {
   font-family: 'Roboto';
   font-weight: 500;
   display: block;
-  color: #363636
+  color: #363636;
 }
 
 @media (max-width: 480px) {
   header .logo {
-    padding: 0
+    padding: 0;
   }
 }
 
 header .head-top .top-menu ul li.menu-item-has-children > a:after {
-  content: "\f123";
+  content: '\f123';
   margin-left: 5px;
   position: relative;
   top: 0;
   display: inline-block;
-  font-family: "Ionicons";
-  font-size: .8em;
+  font-family: 'Ionicons';
+  font-size: 0.8em;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
@@ -229,7 +229,7 @@ header .head-top .top-menu ul li.menu-item-has-children > a:after {
   text-rendering: auto;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  -moz-osx-font-smoothing: grayscale;
 }
 
 header .head-top .top-menu .sub-menu,
@@ -241,17 +241,17 @@ header .head-top .top-menu .children {
   width: 190px;
   text-align: left;
   background: #fff;
-  box-shadow: 0 5px 50px rgba(0,0,0,.05);
-  -webkit-box-shadow: 0 5px 50px rgba(0,0,0,.05);
-  -moz-box-shadow: 0 5px 50px rgba(0,0,0,.05);
-  -o-box-shadow: 0 5px 50px rgba(0,0,0,.05);
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.05);
+  -o-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.05);
   z-index: 50;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s ease 0s;
-  -moz-transition: all .3s ease 0s;
-  -webkit-transition: all .3s ease 0s;
-  -o-transition: all .3s ease 0s
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
 }
 
 @media (max-width: 840px) {
@@ -280,7 +280,7 @@ header .head-top .top-menu .children:before {
   left: 10px;
   top: -12px;
   border: 6px solid transparent;
-  border-bottom: 6px solid #fff
+  border-bottom: 6px solid #fff;
 }
 
 header .head-top .top-menu .sub-menu li,
@@ -289,12 +289,12 @@ header .head-top .top-menu .children li {
   padding: 8px 20px;
   display: block;
   border-bottom: 1px solid #f4f4f4;
-  height: auto
+  height: auto;
 }
 
 header .head-top .top-menu .sub-menu li:last-child,
 header .head-top .top-menu .children li:last-child {
-  border-bottom: none
+  border-bottom: none;
 }
 
 header .head-top .top-menu .sub-menu li a,
@@ -302,19 +302,19 @@ header .head-top .top-menu .children li a {
   margin-top: 0;
   display: block;
   font-size: 12px;
-  color: #363636
+  color: #363636;
 }
 
 header .head-top .top-menu .sub-menu li a:hover,
 header .head-top .top-menu .children li a:hover {
   color: #f26b38;
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 header .head-top .top-menu .sub-menu li .sub-menu,
 header .head-top .top-menu .children li .children {
   left: 100%;
-  top: -10px
+  top: -10px;
 }
 
 header .head-top .top-menu .sub-menu li .sub-menu:before,
@@ -325,13 +325,13 @@ header .head-top .top-menu .children li .children:before {
   top: 16px;
   border: 6px solid transparent;
   border-right: 6px solid #fff;
-  border-bottom: 6px solid transparent
+  border-bottom: 6px solid transparent;
 }
 
 header .head-top .top-menu ul li:hover > .sub-menu,
 header .head-top .top-menu ul li:hover > .children {
   opacity: 1;
-  visibility: visible
+  visibility: visible;
 }
 
 /* 2. Section */
@@ -593,7 +593,7 @@ header .head-top .top-menu ul li:hover > .children {
 }
 
 .resume-items .resume-item:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -630,7 +630,7 @@ header .head-top .top-menu ul li:hover > .children {
 }
 
 .resume-items .resume-item .date:before {
-  content: "";
+  content: '';
   width: 29px;
   height: 1px;
   position: absolute;
@@ -1197,7 +1197,7 @@ footer .copy {
   font-weight: 300;
   color: #ffffff;
   font-size: 24px;
-  font-family: "Verdana" !important;
+  font-family: 'Verdana' !important;
 }
 
 /*
@@ -1654,7 +1654,7 @@ a.btn:hover {
   top: 0.09em;
   left: 0.09em;
   display: block;
-  content: " ";
+  content: ' ';
   border-radius: 50%;
   background-color: #ffffff;
   width: 0.82em;

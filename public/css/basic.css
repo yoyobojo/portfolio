@@ -76,7 +76,7 @@ body.loaded .section {
 }
 
 .container .line {
-  content: "";
+  content: '';
   position: fixed;
   background: #f26b38;
   z-index: 105;
@@ -182,7 +182,7 @@ body.loaded .section {
 }
 
 .cols:after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
@@ -375,8 +375,8 @@ fieldset {
   padding: 0;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   display: inline;
 }
 

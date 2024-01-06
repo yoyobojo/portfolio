@@ -1,4 +1,4 @@
-import { LINKS } from "@/utils/constants";
+import { LINKS } from '@/utils/constants';
 
 export const Footer = () => {
   return (
@@ -13,7 +13,6 @@ export const Footer = () => {
         <a target="_blank" href={LINKS.calendly}>
           <span className="ion ion-calendar" />
         </a>
-
       </div>
       <div className="copy">
         © {new Date().getFullYear()} Suave Tech Solutions. All rights reserved.

@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import React from 'react';
 import Typed from 'typed.js';
 
@@ -7,7 +7,7 @@ export class TypedStrings extends React.Component {
     const { strings, options } = this.props;
     const _options = {
       ...options,
-        strings: strings,
+      strings: strings
     };
     this.typed = new Typed(this.el, _options);
   }
@@ -22,8 +22,12 @@ export class TypedStrings extends React.Component {
         <div className="type-wrap">
           <span
             style={{ whiteSpace: 'pre' }}
-            ref={(el) => { this.el = el; }}
-            className={this.props?.size && this.props.size === 'lg' ? 'h-title' : ''}
+            ref={(el) => {
+              this.el = el;
+            }}
+            className={
+              this.props?.size && this.props.size === 'lg' ? 'h-title' : ''
+            }
           />
         </div>
       </div>
