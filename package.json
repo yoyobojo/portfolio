@@ -15,7 +15,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint --fix",
     "format": "npx prettier --write .",
     "prepare": "husky install"
   },
@@ -29,6 +29,8 @@
     "typed.js": "^2.0.16"
   },
   "devDependencies": {
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.0.4",
     "husky": "^8.0.3",
     "prettier": "^3.1.1"
   }
