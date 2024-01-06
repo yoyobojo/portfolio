@@ -1,5 +1,5 @@
 import { LINKS } from "@/utils/constants";
-import { OnePageLink, ResumeItem } from "../components";
+import { ResumeItem } from "@/ui/components";
 
 const Resume = () => {
   return (

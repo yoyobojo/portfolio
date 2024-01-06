@@ -1,4 +1,4 @@
-import { Base } from "@/ui/layouts/base";
+import { Base } from "@/ui/base/layout";
 import Hero from "@/ui/views/hero";
 import About from "@/ui/views/about";
 import Resume from "@/ui/views/resume";

@@ -1,4 +1,4 @@
-import { TechnologyHighlight } from "../components";
+import { TechnologyHighlight } from "@/ui/components";
 
 const SERVICES_ITEMS = [
   {

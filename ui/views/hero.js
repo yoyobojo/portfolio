@@ -1,5 +1,5 @@
 "use client";
-import {TypedStrings} from "@/ui/components/typed";
+import { TypedStrings, GlitchText } from "@/ui/components";
 
 const Hero = ({ mouse }) => {
   return (
@@ -8,9 +8,7 @@ const Hero = ({ mouse }) => {
         <div className="vertical-center">
           <div className="started-content">
             <span>GM! My name is</span>
-            <div className="h-title glitch-effect" data-text="Angello Lazar">
-              <span>Angello Lazar</span>
-            </div>
+            <GlitchText text="Angello Lazar" />
             <TypedStrings 
               strings={[
                 "I am a dreamer.",

@@ -1,4 +1,4 @@
-import {Preloader} from "@/ui/layouts/preloader";
+import {Preloader} from "@/ui/base/preloader";
 import "@css/animate.css";
 import "@css/basic.css";
 import "@css/layout.css";

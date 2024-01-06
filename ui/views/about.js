@@ -1,6 +1,6 @@
 import { LINKS } from "@/utils/constants";
 import { calcTimeDifference } from "@/utils/helpers"
-import { OnePageLink } from "../components";
+import { OnePageLink } from "@/ui/components";
 
 const ABOUT_ITEMS = [
   { label: "Name", value: "Angello Lazar" },

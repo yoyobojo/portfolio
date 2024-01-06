@@ -10,4 +10,5 @@ export const LINKS = {
   vmex: "https://vmex.finance",
   pintswap: "https://pintswap.exchange",
   raeri: "https://raeri.co/"
-}
+};
+

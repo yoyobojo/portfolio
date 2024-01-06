@@ -143,7 +143,7 @@ export const Knowledge = () => {
 };
 
 import { Fragment } from "react";
-import { LanguageHighlight } from "../components";
+import { LanguageHighlight } from "@/ui/components";
 const Skills = ({
   design = true,
   coding = true,
