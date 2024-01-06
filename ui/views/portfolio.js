@@ -112,7 +112,7 @@ const Portfolio = () => {
               description="Lorem Ipsum blah blah"
               img="images/works/work3.jpg"
             />
-                        <Thumbnail 
+            <Thumbnail 
               type="modal"
               title="Lorem Ipsum"
               link="https://beshley.com/"

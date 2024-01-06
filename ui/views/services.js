@@ -1,5 +1,38 @@
 import { TechnologyHighlight } from "../components";
 
+const SERVICES_ITEMS = [
+  {
+    img: "react-logo.svg",
+    desc: "You name it, anything from NextJS to EXTJS and everything in between.",
+    text: "Frontend Frameworks"
+  },
+  {
+    img: "api-logo.svg",
+    desc: "Built some E2E backend services usually using Express frameworks and sometimes websockets.",
+    text: "Rest APIs & Web Sockets"
+  },
+  {
+    img: "aws-logo.svg",
+    desc: "There's so much to learn with AWS, but used plenty of their services like EC2 and Kubernetes.",
+    text: "AWS Services"
+  },
+  {
+    img: "azure-devops-logo.svg",
+    desc: "By no means an expert, but I can make my way around Azure Devops when it comes to CI/CD.",
+    text: "Azure Devops"
+  },
+  {
+    img: "foundry-logo.png",
+    desc: "I'll say it now - Foundry is better than hardhat by a longshot. Much easier to navigate and really powerful.",
+    text: "Foundry / Anvil"
+  },
+  {
+    img: "network-logo.svg",
+    desc: "Started dabbling in this working at PintSwap, a peer-to-peer OTC exchange.",
+    text: "Peer-to-Peer Networking"
+  }
+]
+
 const Services = () => {
   return (
     <div className="section service section_" id="services">
@@ -8,42 +41,15 @@ const Services = () => {
           <div className="title_inner">Familiar Technologies</div>
         </div>
         <div className="service-items">
-          <TechnologyHighlight 
-            src="/images/logos/react-logo.svg"
-            description="You name it, anything from NextJS to EXTJS and everything in between."
-          >
-            Frontend Frameworks
-          </TechnologyHighlight>
-          <TechnologyHighlight 
-            src="/images/logos/api-logo.svg"
-            description="Built some E2E backend services usually using Express frameworks and sometimes websockets."
-          >
-            Rest APIs & Web Sockets
-          </TechnologyHighlight>
-          <TechnologyHighlight 
-            src="/images/logos/aws-logo.svg"
-            description="There's so much to learn with AWS, but used plenty of their services like EC2 and Kubernetes."
-          >
-            AWS Services
-          </TechnologyHighlight>
-          <TechnologyHighlight 
-            src="/images/logos/azure-devops-logo.svg"
-            description="By no means an expert, but I can make my way around Azure Devops when it comes to CI/CD."
-          >
-            Azure Devops
-          </TechnologyHighlight>
-          <TechnologyHighlight 
-            src="/images/logos/foundry-logo.png"
-            description="I'll say it now - Foundry is better than hardhat by a longshot. Much easier to navigate and really powerful."
-          >
-            Foundry / Anvil
-          </TechnologyHighlight>
-          <TechnologyHighlight 
-            src="/images/logos/network-logo.svg"
-            description="Began dabbling in this working working at PintSwap, a peer-to-peer OTC exchange."
-          >
-            Peer-to-Peer Networking
-          </TechnologyHighlight>
+          {SERVICES_ITEMS.map(({ img, desc, text }, i) => (
+            <TechnologyHighlight 
+              src={`/images/logos/${img}`}
+              description={desc}
+              key={`services-${i}`}
+            >
+              {text}
+            </TechnologyHighlight>
+          ))}
         </div>
       </div>
     </div>

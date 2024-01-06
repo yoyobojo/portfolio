@@ -2,6 +2,14 @@ import { LINKS } from "@/utils/constants";
 import { calcTimeDifference } from "@/utils/helpers"
 import { OnePageLink } from "../components";
 
+const ABOUT_ITEMS = [
+  { label: "Name", value: "Angello Lazar" },
+  { label: "Age", value: `${calcTimeDifference(new Date(), new Date("September 8, 1999"), 'years')} Years` },
+  { label: "Job", value: "Engineer" },
+  { label: "Nationality", value: "Romanian" },
+  { label: "Residence", value: "Atlanta / NYC" }
+]
+
 const About = () => {
   return (
     <div className="section about section_" id="about">
@@ -15,25 +23,15 @@ const About = () => {
         <div className="desc">
         <div className="info-list">
             <ul>
-              <li>
-                <strong>Name:</strong> Angello Lazar
-              </li>
-              <li>
-                <strong>Age:</strong> {calcTimeDifference(new Date(), new Date("September 8, 1999"), 'years')} Years
-              </li>
-              <li>
-                <strong>Job:</strong> Engineer
-              </li>
-              <li>
-                <strong>Nationality:</strong> Romanian
-              </li>
-              <li>
-                <strong>Residence: </strong> Atlanta / NYC
-              </li>
+              {ABOUT_ITEMS.map(({ label, value }, i) => (
+                <li key={`about-info-${i}`}>
+                  <strong>{label}:</strong> {value}
+                </li>
+              ))}
             </ul>
           </div>
           <p>
-            GM! Glad you found me! They known as ALo in the ether, but you can call me Angello. 
+            GM! Glad you found me! They know me as ALo in the ether, but you can call me Angello. 
           </p>
           <p>
             I studied Economics, Computer Science, and Mathematics at New York University. 

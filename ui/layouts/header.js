@@ -1,6 +1,13 @@
 "use client";
 import { useEffect, useState } from "react";
 
+const NAV_ITEMS = [
+  { text: "Resume", type: "lnk" },
+  { text: "Skills", type: "lnk" },
+  { text: "Works", type: "lnk" },
+  { text: "Contact", type: "btn" }
+]
+
 export const Header = () => {
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
@@ -43,26 +50,13 @@ export const Header = () => {
         </a>
         <div className="top-menu">
           <ul>
-            <li className="">
-              <a href="#resume" className="lnk">
-                Resume
-              </a>
-            </li>
-            <li className="">
-              <a href="#skills" className="lnk">
-                Skills
-              </a>
-            </li>
-            <li className="">
-              <a href="#works" className="lnk">
-                Works
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="btn">
-                Contact
-              </a>
-            </li>
+            {NAV_ITEMS.map(({ text, type }, i) => (
+              <li key={`nav-${i}`}>
+                <a href={`#${text.toLowerCase()}`} className={type}>
+                  {text}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
