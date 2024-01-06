@@ -97,42 +97,42 @@ export const Knowledge = () => {
           <ul>
             <li>
               <LanguageHighlight src="/images/logos/javascript-logo.svg">
-                Javascript / Typescript
+                Javascript / Typescript (Expert)
               </LanguageHighlight>
             </li>
             <li>
               <LanguageHighlight src="/images/logos/nodejs-logo.svg">
-                NodeJS / Express
+                NodeJS / Express (Expert)
               </LanguageHighlight>
             </li>
             <li>
               <LanguageHighlight src="/images/logos/database-logo.svg">
-                SQL / NoSQL
+                SQL / NoSQL (Intermediate)
               </LanguageHighlight>
             </li>
             <li>
               <LanguageHighlight src="/images/logos/python-logo.svg">
-                Python / Django
+                Python / Django (Intermediate)
               </LanguageHighlight>
             </li>
             <li>
               <LanguageHighlight src="/images/logos/solidity-logo.svg">
-                Solidity
+                Solidity (Beginner)
               </LanguageHighlight>
             </li>
             <li>
               <LanguageHighlight src="/images/logos/linux-logo.svg">
-                Linux Systems
+                Linux Systems (Beginner)
               </LanguageHighlight>
             </li>
             <li>
               <LanguageHighlight src="/images/logos/web-dev-logo.svg">
-                HTML / CSS
+                HTML / CSS (Expert)
               </LanguageHighlight>
             </li>
             <li>
               <LanguageHighlight src="/images/logos/rust-logo.svg">
-                Rust
+                Rust (Beginner)
               </LanguageHighlight>
             </li>
           </ul>

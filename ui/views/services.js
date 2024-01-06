@@ -10,37 +10,37 @@ const Services = () => {
         <div className="service-items">
           <TechnologyHighlight 
             src="/images/logos/react-logo.svg"
-            description="Morbi nulla arcu, pellentesque sed egestas in."
+            description="You name it, anything from NextJS to EXTJS and everything in between."
           >
             Frontend Frameworks
           </TechnologyHighlight>
           <TechnologyHighlight 
             src="/images/logos/api-logo.svg"
-            description="Morbi nulla arcu, pellentesque sed egestas in."
+            description="Built some E2E backend services usually using Express frameworks and sometimes websockets."
           >
             Rest APIs & Web Sockets
           </TechnologyHighlight>
           <TechnologyHighlight 
             src="/images/logos/aws-logo.svg"
-            description="Morbi nulla arcu, pellentesque sed egestas in."
+            description="There's so much to learn with AWS, but used plenty of their services like EC2 and Kubernetes."
           >
             AWS Services
           </TechnologyHighlight>
           <TechnologyHighlight 
             src="/images/logos/azure-devops-logo.svg"
-            description="Morbi nulla arcu, pellentesque sed egestas in."
+            description="By no means an expert, but I can make my way around Azure Devops when it comes to CI/CD."
           >
             Azure Devops
           </TechnologyHighlight>
           <TechnologyHighlight 
             src="/images/logos/foundry-logo.png"
-            description="Morbi nulla arcu, pellentesque sed egestas in."
+            description="I'll say it now - Foundry is better than hardhat by a longshot. Much easier to navigate and really powerful."
           >
             Foundry / Anvil
           </TechnologyHighlight>
           <TechnologyHighlight 
             src="/images/logos/network-logo.svg"
-            description="Morbi nulla arcu, pellentesque sed egestas in."
+            description="Began dabbling in this working working at PintSwap, a peer-to-peer OTC exchange."
           >
             Peer-to-Peer Networking
           </TechnologyHighlight>
