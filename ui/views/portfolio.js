@@ -93,11 +93,7 @@ const Portfolio = () => {
           </div> */}
           <div className="box-items portfolio-items">
             {WORKS.map((w, i) => (
-              <Thumbnail
-                key={`portfolio-item-${i}`}
-                type="modal"
-                {...w}
-              />
+              <Thumbnail key={`portfolio-item-${i}`} type="modal" {...w} />
             ))}
           </div>
           <div className="clear" />

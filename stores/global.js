@@ -17,22 +17,22 @@ const reducer = (state, action) => {
     case MODAL:
       return {
         ...state,
-        modal: payload,
+        modal: payload
       };
     case PORTFOLIOMODAL:
       return {
         ...state,
-        portfolioModal: payload,
+        portfolioModal: payload
       };
     case BLOGMODAL:
       return {
         ...state,
-        blogModal: payload,
+        blogModal: payload
       };
     case GALLERY:
       return {
         ...state,
-        gallery: payload,
+        gallery: payload
       };
     default:
       return state;
@@ -50,32 +50,32 @@ const state = (props) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const modalToggle = useCallback((value) => {
-    console.log("modalToggle:value", value)
+    console.log('modalToggle:value', value);
     dispatch({
       type: MODAL,
-      payload: value,
+      payload: value
     });
   }, []);
 
   const setPortfolioModal = useCallback((value) => {
-    console.log("setPortfolioModal:value", value)
+    console.log('setPortfolioModal:value', value);
     dispatch({
       type: PORTFOLIOMODAL,
-      payload: value,
+      payload: value
     });
   }, []);
   const setBlogModal = useCallback((value) => {
-    console.log("setBlogModal:value", value)
+    console.log('setBlogModal:value', value);
     dispatch({
       type: BLOGMODAL,
-      payload: value,
+      payload: value
     });
   }, []);
   const setGallery = useCallback((value) => {
-    console.log("setBlogModal:value", value)
+    console.log('setBlogModal:value', value);
     dispatch({
       type: GALLERY,
-      payload: value,
+      payload: value
     });
   }, []);
 

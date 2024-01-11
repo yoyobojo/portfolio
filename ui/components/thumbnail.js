@@ -1,14 +1,7 @@
 import { useGlobalContext } from '@/stores/global';
 
 export const Thumbnail = (props) => {
-  const {
-    type,
-    category,
-    img,
-    title,
-    description,
-    link
-  } = props;
+  const { type, category, img, title, description, link } = props;
   const { modalToggle, setPortfolioModal } = useGlobalContext();
 
   switch (type) {

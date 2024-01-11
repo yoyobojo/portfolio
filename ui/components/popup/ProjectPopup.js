@@ -3,7 +3,7 @@ import { useGlobalContext } from '@/stores/global';
 import PopContainer from './PopupContainer';
 const ProjectPopup = () => {
   const { setPortfolioModal, portfolioModal } = useGlobalContext();
-  console.log("port", portfolioModal)
+  console.log('port', portfolioModal);
   return (
     <PopContainer nullValue={setPortfolioModal}>
       <div className="content">
@@ -13,15 +13,16 @@ const ProjectPopup = () => {
       </div>
         ))} */}
         <div className="image">
-        <img src={portfolioModal.gallery[0]} alt={portfolioModal.description} />
-      </div>
+          <img
+            src={portfolioModal.gallery[0]}
+            alt={portfolioModal.description}
+          />
+        </div>
         <div className="desc">
           <div className="category">{portfolioModal.category}</div>
           <h4>{portfolioModal.title}</h4>
-          <p>
-            {portfolioModal.description}
-          </p>
-          <a href="#" className="btn" data-text="View Project">
+          <p>{portfolioModal.description}</p>
+          <a href={portfolioModal.link} target="_blank" className="btn" data-text="View Project">
             View Project
           </a>
         </div>
