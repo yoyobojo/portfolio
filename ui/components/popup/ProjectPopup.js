@@ -22,7 +22,12 @@ const ProjectPopup = () => {
           <div className="category">{portfolioModal.category}</div>
           <h4>{portfolioModal.title}</h4>
           <p>{portfolioModal.description}</p>
-          <a href={portfolioModal.link} target="_blank" className="btn" data-text="View Project">
+          <a
+            href={portfolioModal.link}
+            target="_blank"
+            className="btn"
+            data-text="View Project"
+          >
             View Project
           </a>
         </div>
