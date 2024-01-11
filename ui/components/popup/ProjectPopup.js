@@ -1,23 +1,25 @@
 'use client';
-import { context } from '@/stores/global';
-import { useContext } from 'react';
+import { useGlobalContext } from '@/stores/global';
 import PopContainer from './PopupContainer';
 const ProjectPopup = () => {
-  const { setPortfolioModal, portfolioModal } = useContext(context);
+  const { setPortfolioModal, portfolioModal } = useGlobalContext();
+  console.log("port", portfolioModal)
   return (
     <PopContainer nullValue={setPortfolioModal}>
       <div className="content">
+        {/* {portfolioModal.gallery.map((g, i) => (
+        <div className="image" key={`portfolio-modal-${portfolioModal.title}-${i}`}>
+        <img src={g} alt={portfolioModal.description} />
+      </div>
+        ))} */}
         <div className="image">
-          <img src="images/works/work9.jpg" alt="" />
-        </div>
+        <img src={portfolioModal.gallery[0]} alt={portfolioModal.description} />
+      </div>
         <div className="desc">
-          <div className="category">Graphics</div>
-          <h4>Hello World Paper</h4>
+          <div className="category">{portfolioModal.category}</div>
+          <h4>{portfolioModal.title}</h4>
           <p>
-            Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
-            Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et
-            fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
-            quem quod cibo.
+            {portfolioModal.description}
           </p>
           <a href="#" className="btn" data-text="View Project">
             View Project

@@ -868,13 +868,16 @@ header .head-top .top-menu ul li:hover > .children {
 .box-items .box-item .image a {
   display: block;
   font-size: 0;
+  height: 250px;
 }
 
 .box-items .box-item .image a img {
   width: 100%;
-  height: auto;
+  height: 100%;
   position: relative;
   top: 0;
+  object-fit: cover;
+  object-position: center;
 }
 
 .box-items .box-item .image .info {

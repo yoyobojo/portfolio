@@ -12,7 +12,7 @@ const Hero = ({ mouse }) => {
             <TypedStrings
               strings={[
                 'I am a dreamer.',
-                'I am a software engineer.',
+                'I am an engineer.',
                 'I am a blockchain nerd.',
                 'I am a fitness freak.'
               ]}

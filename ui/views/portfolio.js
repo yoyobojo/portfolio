@@ -2,6 +2,7 @@
 import Isotope from 'isotope-layout';
 import { Fragment, useCallback, useEffect, useRef, useState } from 'react';
 import { Thumbnail } from '@/ui/components';
+import { WORKS } from '@/utils/works';
 
 const Portfolio = () => {
   // Isotope
@@ -48,7 +49,7 @@ const Portfolio = () => {
           <div className="title">
             <div className="title_inner">Recent Works</div>
           </div>
-          <div className="filter-menu">
+          {/* <div className="filter-menu">
             <div className="filters">
               <div className="btn-group">
                 <label
@@ -89,31 +90,15 @@ const Portfolio = () => {
                 </label>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="box-items portfolio-items">
-            <Thumbnail
-              type="link"
-              title="Lorem Ipsum"
-              link="https://beshley.com/"
-              category="Links"
-              img="images/works/work8.jpg"
-            />
-            <Thumbnail
-              type="modal"
-              title="Lorem Ipsum"
-              link="https://beshley.com/"
-              category="Content"
-              description="Lorem Ipsum blah blah"
-              img="images/works/work3.jpg"
-            />
-            <Thumbnail
-              type="modal"
-              title="Lorem Ipsum"
-              link="https://beshley.com/"
-              category="Content"
-              description="Lorem Ipsum blah blah"
-              img="images/works/work3.jpg"
-            />
+            {WORKS.map((w, i) => (
+              <Thumbnail
+                key={`portfolio-item-${i}`}
+                type="modal"
+                {...w}
+              />
+            ))}
           </div>
           <div className="clear" />
         </div>

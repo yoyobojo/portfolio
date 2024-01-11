@@ -1,13 +1,14 @@
 import { useGlobalContext } from '@/stores/global';
 
-export const Thumbnail = ({
-  type,
-  category,
-  img,
-  title,
-  description,
-  link
-}) => {
+export const Thumbnail = (props) => {
+  const {
+    type,
+    category,
+    img,
+    title,
+    description,
+    link
+  } = props;
   const { modalToggle, setPortfolioModal } = useGlobalContext();
 
   switch (type) {
@@ -21,7 +22,7 @@ export const Thumbnail = ({
               onClick={(e) => {
                 e.preventDefault();
                 modalToggle(true);
-                setPortfolioModal(true);
+                setPortfolioModal(props);
               }}
             >
               <img src={img} alt />
@@ -42,7 +43,7 @@ export const Thumbnail = ({
               onClick={(e) => {
                 e.preventDefault();
                 modalToggle(true);
-                setPortfolioModal(true);
+                setPortfolioModal(props);
               }}
             >
               {title}
