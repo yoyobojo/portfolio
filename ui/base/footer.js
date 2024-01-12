@@ -1,18 +1,22 @@
 import { LINKS } from '@/utils/constants';
+import { SocialLink } from '../components';
 
 export const Footer = () => {
   return (
     <footer>
       <div className="soc">
-        <a target="_blank" href={LINKS.linkedin}>
-          <span className="ion ion-social-linkedin" />
-        </a>
-        <a target="_blank" href={LINKS.github}>
-          <span className="ion ion-social-github" />
-        </a>
-        <a target="_blank" href={LINKS.calendly}>
-          <span className="ion ion-calendar" />
-        </a>
+        <SocialLink 
+          link={LINKS.linkedin}
+          icon="linkedin"
+        />
+        <SocialLink 
+          link={LINKS.github}
+          icon="github"
+        />
+        <SocialLink 
+          link={LINKS.calendly}
+          icon="calendar"
+        />
       </div>
       <div className="copy">
         © {new Date().getFullYear()} Suave Tech Solutions. All rights reserved.

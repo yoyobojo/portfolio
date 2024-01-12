@@ -1,5 +1,7 @@
 'use client';
 import { useGlobalContext } from '@/stores/global';
+import { LINKS } from '@/utils/constants';
+import { SocialLink } from '../social-link';
 import PopContainer from './PopupContainer';
 const ProjectPopup = () => {
   const { setPortfolioModal, portfolioModal } = useGlobalContext();
@@ -19,8 +21,26 @@ const ProjectPopup = () => {
           />
         </div>
         <div className="desc">
-          <div className="category">{portfolioModal.category}</div>
-          <h4>{portfolioModal.title}</h4>
+          <div className="flex items-center justify-between">
+            <div>
+              <span className="category">{portfolioModal.category}</span>
+              <h4>{portfolioModal.title}</h4>
+            </div>
+            <div className="flex items-center gap-1">
+              {portfolioModal.github && (
+                <SocialLink 
+                  link={portfolioModal.github}
+                  icon="github"
+                />
+              )}
+              {portfolioModal.twitter && (
+                <SocialLink 
+                  link={portfolioModal.twitter}
+                  icon="twitter"
+                />
+              )}
+            </div>
+          </div>
           <p>{portfolioModal.description}</p>
           <a
             href={portfolioModal.link}

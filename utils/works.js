@@ -10,7 +10,9 @@ export const WORKS = [
       'images/works/pintswap/1.png',
       'images/works/pintswap/2.png',
       'images/works/pintswap/3.png'
-    ]
+    ],
+    github: 'https://github.com/pintswap',
+    twitter: 'https://twitter.com/pintswap0x'
   },
   {
     title: 'DataEarn',
@@ -23,7 +25,7 @@ export const WORKS = [
       'images/works/dataearn/1.png',
       'images/works/dataearn/2.png',
       'images/works/dataearn/3.png'
-    ]
+    ],
   },
   {
     title: 'VMEX Finance',
@@ -36,6 +38,8 @@ export const WORKS = [
       'images/works/vmex/1.png',
       'images/works/vmex/2.png',
       'images/works/vmex/3.png'
-    ]
+    ],
+    github: 'https://github.com/vmex-finance',
+    twitter: 'https://twitter.com/vmexfinance',
   }
 ];
