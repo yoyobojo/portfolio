@@ -1136,7 +1136,7 @@ footer .copy {
 }
 
 .popup-box .desc {
-  padding: 30px 20px;
+  padding: 18px 12px;
 }
 
 .popup-box .desc h4 {
@@ -1151,7 +1151,7 @@ footer .copy {
 }
 
 .popup-box .desc p {
-  margin-top: 15px;
+  margin-top: 6px;
 }
 
 .mfp-fade.mfp-bg {
@@ -1192,8 +1192,8 @@ footer .copy {
 }
 
 .mfp-close {
-  width: 54px !important;
-  height: 54px !important;
+  width: 50px !important;
+  height: 52px !important;
   background: #ffffff !important;
   line-height: 54px !important;
   opacity: 1 !important;

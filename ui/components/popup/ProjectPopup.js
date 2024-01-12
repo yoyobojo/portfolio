@@ -28,10 +28,10 @@ const ProjectPopup = () => {
             </div>
             <div className="flex items-center gap-1">
               {portfolioModal.github && (
-                <SocialLink link={portfolioModal.github} icon="github" />
+                <SocialLink link={portfolioModal.github} icon="github" size="18px" />
               )}
               {portfolioModal.twitter && (
-                <SocialLink link={portfolioModal.twitter} icon="twitter" />
+                <SocialLink link={portfolioModal.twitter} icon="twitter" size="18px" />
               )}
             </div>
           </div>

@@ -1,4 +1,4 @@
-export const SocialLink = ({ link, icon }) => {
+export const SocialLink = ({ link, icon, size }) => {
   const renderIcon = () => {
     switch (icon) {
       case 'github':
@@ -12,8 +12,8 @@ export const SocialLink = ({ link, icon }) => {
     }
   };
   return (
-    <a target="_blank" href={link}>
-      <span className={`ion ${renderIcon()}`} />
+    <a target="_blank" href={link} className="p-0.5">
+      <span className={`ion ${renderIcon()}`} style={{ fontSize: size ?? '16px' }} />
     </a>
   );
 };
