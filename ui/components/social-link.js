@@ -13,7 +13,10 @@ export const SocialLink = ({ link, icon, size }) => {
   };
   return (
     <a target="_blank" href={link} className="p-0.5">
-      <span className={`ion ${renderIcon()}`} style={{ fontSize: size ?? '16px' }} />
+      <span
+        className={`ion ${renderIcon()}`}
+        style={{ fontSize: size ?? '16px' }}
+      />
     </a>
   );
 };
