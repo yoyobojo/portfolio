@@ -25,7 +25,7 @@ export const WORKS = [
       'images/works/dataearn/1.png',
       'images/works/dataearn/2.png',
       'images/works/dataearn/3.png'
-    ],
+    ]
   },
   {
     title: 'VMEX Finance',
@@ -40,6 +40,6 @@ export const WORKS = [
       'images/works/vmex/3.png'
     ],
     github: 'https://github.com/vmex-finance',
-    twitter: 'https://twitter.com/vmexfinance',
+    twitter: 'https://twitter.com/vmexfinance'
   }
 ];
