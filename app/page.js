@@ -20,7 +20,7 @@ const Page = () => {
       <Skills coding={false} design={false} />
       <Services />
       <Portfolio />
-      <Contact />
+      {/* <Contact /> */}
     </Base>
   );
 };
