@@ -75,7 +75,12 @@ const About = () => {
           </p>
           <div className="flex items-center gap-3">
             <div className="bts">
-              <a href="/files/alazar-cv.pdf" target="_blank" className="btn fill" data-text="Download CV">
+              <a
+                href="/files/alazar-cv.pdf"
+                target="_blank"
+                className="btn fill"
+                data-text="Download CV"
+              >
                 Download CV
               </a>
             </div>
