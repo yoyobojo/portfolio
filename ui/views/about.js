@@ -44,8 +44,11 @@ const About = () => {
             call me Angello.
           </p>
           <p>
-            One thing about me is that I am passionately curious. I studied Economics, Computer Science, and Mathematics at New York
-            University. Lucky for me, I went to work in corporate as a software engineer and consultant for a few years after graduating. With the business and tech knowledge I gained from there, I decided to start{' '}
+            One thing about me is that I am passionately curious. I studied
+            Economics, Computer Science, and Mathematics at New York University.
+            Lucky for me, I went to work in corporate as a software engineer and
+            consultant for a few years after graduating. With the business and
+            tech knowledge I gained from there, I decided to start{' '}
             <a
               href={LINKS.suavetech}
               target="_blank"
@@ -59,8 +62,8 @@ const About = () => {
           </p>
           <p>
             If I am not working, working out, or watching/playing soccer, you
-            can find me in a park reading a book or out at a bar
-            sipping a godfather.
+            can find me in a park reading a book or out at a bar sipping a
+            godfather.
           </p>
           <div className="flex items-center gap-3">
             {/* <div className="bts">

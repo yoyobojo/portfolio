@@ -14,7 +14,7 @@ const Hero = ({ mouse }) => {
                 'I am a dreamer.',
                 'I am an engineer.',
                 'I am a fighter.',
-                'I am a blockchain nerd.',
+                'I am a blockchain nerd.'
               ]}
               options={{
                 loop: true,
