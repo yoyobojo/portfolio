@@ -5,7 +5,7 @@ const NAV_ITEMS = [
   { text: 'Resume', type: 'lnk' },
   { text: 'Skills', type: 'lnk' },
   { text: 'Works', type: 'lnk' },
-  { text: 'Contact', type: 'btn' }
+  // { text: 'Contact', type: 'btn' }
 ];
 
 export const Header = () => {
@@ -48,7 +48,7 @@ export const Header = () => {
         <a href="#" className="menu-btn" onClick={(e) => onClick(e)}>
           <span />
         </a>
-        <div className="top-menu">
+        <div className="top-menu" style={{ paddingRight: "1rem" }}>
           <ul>
             {NAV_ITEMS.map(({ text, type }, i) => (
               <li key={`nav-${i}`}>

@@ -13,8 +13,8 @@ const Hero = ({ mouse }) => {
               strings={[
                 'I am a dreamer.',
                 'I am an engineer.',
+                'I am a fighter.',
                 'I am a blockchain nerd.',
-                'I am a fitness freak.'
               ]}
               options={{
                 loop: true,

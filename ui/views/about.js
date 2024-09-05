@@ -3,7 +3,6 @@ import { calcTimeDifference } from '@/utils/helpers';
 import { OnePageLink } from '@/ui/components';
 
 const ABOUT_ITEMS = [
-  { label: 'Name', value: 'Angello Lazar' },
   {
     label: 'Age',
     value: `${calcTimeDifference(
@@ -14,7 +13,7 @@ const ABOUT_ITEMS = [
   },
   { label: 'Job', value: 'Engineer' },
   { label: 'Nationality', value: 'Romanian' },
-  { label: 'Residence', value: 'Atlanta / NYC' }
+  { label: 'Residence', value: 'Planet Earth' }
 ];
 
 const About = () => {
@@ -45,18 +44,8 @@ const About = () => {
             call me Angello.
           </p>
           <p>
-            I studied Economics, Computer Science, and Mathematics at New York
-            University. Lucky for me, I landed a job with the{' '}
-            <a
-              href={LINKS.ibmix}
-              target="_blank"
-              style={{ textDecoration: 'underline' }}
-            >
-              iX Team at IBM
-            </a>{' '}
-            as a software engineer and consultant after graduation. After
-            gaining business knowledge there and learning valuable corporate
-            skills, I decided to start{' '}
+            One thing about me is that I am passionately curious. I studied Economics, Computer Science, and Mathematics at New York
+            University. Lucky for me, I went to work in corporate as a software engineer and consultant for a few years after graduating. With the business and tech knowledge I gained from there, I decided to start{' '}
             <a
               href={LINKS.suavetech}
               target="_blank"
@@ -70,11 +59,11 @@ const About = () => {
           </p>
           <p>
             If I am not working, working out, or watching/playing soccer, you
-            can find me in a park in Manhattan reading a book or out at a bar
+            can find me in a park reading a book or out at a bar
             sipping a godfather.
           </p>
           <div className="flex items-center gap-3">
-            <div className="bts">
+            {/* <div className="bts">
               <a
                 href="/files/alazar-cv.pdf"
                 target="_blank"
@@ -83,7 +72,7 @@ const About = () => {
               >
                 Download CV
               </a>
-            </div>
+            </div> */}
             <div className="lnk">
               <OnePageLink href="#works">View Recent Works</OnePageLink>
             </div>

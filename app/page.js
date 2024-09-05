@@ -3,7 +3,7 @@ import Hero from '@/ui/views/hero';
 import About from '@/ui/views/about';
 import Resume from '@/ui/views/resume';
 import Services from '@/ui/views/services';
-import Contact from '@/ui/views/contact';
+// import Contact from '@/ui/views/contact';
 import Skills from '@/ui/views/skills';
 
 import dynamic from 'next/dynamic';
@@ -19,7 +19,7 @@ const Page = () => {
       <Resume />
       <Skills coding={false} design={false} />
       <Services />
-      <Portfolio />
+      {/* <Portfolio /> */}
       {/* <Contact /> */}
     </Base>
   );

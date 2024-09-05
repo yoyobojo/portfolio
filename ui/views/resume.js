@@ -17,7 +17,7 @@ const Resume = () => {
                 position="Founder & Software Engineer"
                 link={LINKS.suavetech}
                 list={[
-                  "Engineered 6+ CRUD apps and SDK's with technologies including React, Node, Solidity, Django, Flask, and more",
+                  "Engineered 20+ CRUD apps and SDK's with technologies including React, Node, Solidity, Django, Flask, and more",
                   'Ideated alongside small teams of developer and business individuals to come up with various profitable business models and digital infrastructures',
                   'Consulted clients on topics ranging from scaling AI using WebRTC communication protocol all the way to writing developer documentation',
                   'Managed a team of 4 developers while leading all sales and design pitches'
